@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">win_debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F95A10D1-B775-4D20-BB03-58F061053EBD}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <BaseIntermediateOutputPath>..\..\.depproj\Peach\obj\</BaseIntermediateOutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Peach.Pro.Core</RootNamespace>
+    <AssemblyName>Peach.Pro</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_debug_x64</OutputPath>
+    <DefineConstants>PEACH;DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_debug_x64\Peach.Pro.xml</DocumentationFile>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_debug_x86</OutputPath>
+    <DefineConstants>PEACH;DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_debug_x86\Peach.Pro.xml</DocumentationFile>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_release_x64</OutputPath>
+    <DefineConstants>PEACH;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_release_x64\Peach.Pro.xml</DocumentationFile>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_release_x86</OutputPath>
+    <DefineConstants>PEACH;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_release_x86\Peach.Pro.xml</DocumentationFile>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronPython">
+      <HintPath>..\..\3rdParty\IronPython.2.7.5\lib\Net40\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Dynamic">
+      <HintPath>..\..\3rdParty\IronPython.2.7.5\lib\Net40\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting">
+      <HintPath>..\..\3rdParty\IronPython.2.7.5\lib\Net40\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata">
+      <HintPath>..\..\3rdParty\IronPython.2.7.5\lib\Net40\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="Dapper">
+      <HintPath>..\..\paket\packages\Dapper\lib\net45\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\paket\packages\DotNetZip\lib\net20\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Diagnostics.Runtime">
+      <HintPath>..\..\paket\packages\Microsoft.Diagnostics.Runtime\lib\net40\Microsoft.Diagnostics.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>..\..\paket\packages\Mono.Posix-4.5\lib\net45\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\..\paket\packages\NLog\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\paket\packages\Newtonsoft.Json\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nustache.Core">
+      <HintPath>..\..\paket\packages\Nustache\lib\net20\Nustache.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PacketDotNet">
+      <HintPath>..\..\paket\packages\PacketDotNet\lib\PacketDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Patterns.Logging">
+      <HintPath>..\..\paket\packages\Patterns.Logging\lib\portable-net45+dnxcore50+sl4+wp71+win8+wpa81\Patterns.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpPcap">
+      <HintPath>..\..\paket\packages\SharpPcap\lib\SharpPcap.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketHttpListener">
+      <HintPath>..\..\paket\packages\SocketHttpListener\lib\net45\SocketHttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\paket\packages\Microsoft.AspNet.WebApi.Client\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow">
+      <HintPath>..\..\paket\packages\Microsoft.Tpl.Dataflow\lib\portable-net45+win8+wpa81\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="vtortola.WebSockets.Deflate">
+      <HintPath>..\..\paket\packages\vtortola.WebSocketListener\lib\net45\vtortola.WebSockets.Deflate.dll</HintPath>
+    </Reference>
+    <Reference Include="vtortola.WebSockets.Rfc6455">
+      <HintPath>..\..\paket\packages\vtortola.WebSocketListener\lib\net45\vtortola.WebSockets.Rfc6455.dll</HintPath>
+    </Reference>
+    <Reference Include="vtortola.WebSockets">
+      <HintPath>..\..\paket\packages\vtortola.WebSocketListener\lib\net45\vtortola.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>..\..\paket\packages\WebSocketSharp\lib\websocket-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite"  Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x64' ">
+      <HintPath>..\..\3rdParty\System.Data.SQLite.x64.1.0.98.1\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite"  Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x86' ">
+      <HintPath>..\..\3rdParty\System.Data.SQLite.x86.1.0.98.1\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite"  Condition=" '$(Configuration)|$(Platform)' == 'win_release|x64' ">
+      <HintPath>..\..\3rdParty\System.Data.SQLite.x64.1.0.98.1\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite"  Condition=" '$(Configuration)|$(Platform)' == 'win_release|x86' ">
+      <HintPath>..\..\3rdParty\System.Data.SQLite.x86.1.0.98.1\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\3rdParty\BouncyCastle\crypto\BouncyCastle.Crypto.csproj">
+      <Project>{6338FB97-6ABD-4814-864D-4F0BE21DFC5A}</Project>
+      <Name>BouncyCastle.Crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\3rdParty\Google.CityHash\Google.CityHash.csproj">
+      <Project>{2237DD09-1695-4D55-8753-8A8FCD637560}</Project>
+      <Name>Google.CityHash</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\core\Core\Peach.Core.csproj">
+      <Project>{B085A5AB-EC0F-4268-9C58-7D6FB5482841}</Project>
+      <Name>Peach.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\3rdParty\Renci.SshNet\Renci.SshNet.csproj">
+      <Project>{E496C645-7498-4C61-97C0-3B0AC55278C2}</Project>
+      <Name>Renci.SshNet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent\Channels\AgentREST.cs" />
+    <Compile Include="Agent\Channels\AgentTcpRemoting.cs" />
+    <Compile Include="Agent\Channels\Rest\Client.cs" />
+    <Compile Include="Agent\Channels\Rest\Extensions.cs" />
+    <Compile Include="Agent\Channels\Rest\Listener.cs" />
+    <Compile Include="Agent\Channels\Rest\LogHandler.cs" />
+    <Compile Include="Agent\Channels\Rest\LogSink.cs" />
+    <Compile Include="Agent\Channels\Rest\Models.cs" />
+    <Compile Include="Agent\Channels\Rest\MonitorHandler.cs" />
+    <Compile Include="Agent\Channels\Rest\PublisherHandler.cs" />
+    <Compile Include="Agent\Channels\Rest\RouteHandler.cs" />
+    <Compile Include="Agent\Channels\Rest\RouteResponse.cs" />
+    <Compile Include="Agent\Channels\Rest\Server.cs" />
+    <Compile Include="Agent\Monitors\BasePythonMonitor.cs" />
+    <Compile Include="Agent\Monitors\CleanupFolderMonitor.cs" />
+    <Compile Include="Agent\Monitors\NullMonitor.cs" />
+    <Compile Include="Agent\Monitors\PcapMonitor.cs" />
+    <Compile Include="Agent\Monitors\PingMonitor.cs" />
+    <Compile Include="Agent\Monitors\ProcessKillerMonitor.cs" />
+    <Compile Include="Agent\Monitors\ProcessMonitor.cs" />
+    <Compile Include="Agent\Monitors\RandoFaulter.cs" />
+    <Compile Include="Agent\Monitors\RunCommand.cs" />
+    <Compile Include="Agent\Monitors\SaveFileMonitor.cs" />
+    <Compile Include="Agent\Monitors\SocketMonitor.cs" />
+    <Compile Include="Agent\Monitors\Utilities\Asan.cs" />
+    <Compile Include="Analyzers\BasePythonAnalyzer.cs" />
+    <Compile Include="Analyzers\Binary.cs" />
+    <Compile Include="Analyzers\RegexAnalyzer.cs" />
+    <Compile Include="Analyzers\StringTokenAnalyzer.cs" />
+    <Compile Include="Analyzers\XmlAnalyzer.cs" />
+    <Compile Include="Analyzers\ZipAnalyzer.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Dom\Bool.cs" />
+    <Compile Include="Dom\Stream.cs" />
+    <Compile Include="Dom\VarNumber.cs" />
+    <Compile Include="Dom\XmlFragment.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Fixups\BasePythonFixup.cs" />
+    <Compile Include="Fixups\CiscoFixup.cs" />
+    <Compile Include="Fixups\CopyValueFixup.cs" />
+    <Compile Include="Fixups\CrcDualFixup.cs" />
+    <Compile Include="Fixups\CrcFixup.cs" />
+    <Compile Include="Fixups\ExpressionFixup.cs" />
+    <Compile Include="Fixups\FillValueFixup.cs" />
+    <Compile Include="Fixups\FromFileFixup.cs" />
+    <Compile Include="Fixups\HMACFixup.cs" />
+    <Compile Include="Fixups\HashFixup.cs" />
+    <Compile Include="Fixups\IcmpChecksumFixup.cs" />
+    <Compile Include="Fixups\IcmpV6ChecksumFixup.cs" />
+    <Compile Include="Fixups\IsoFletcher16Fixup.cs" />
+    <Compile Include="Fixups\LRCFixup.cs" />
+    <Compile Include="Fixups\Libraries\CRCTool.cs" />
+    <Compile Include="Fixups\Libraries\Crc16Dnp3.cs" />
+    <Compile Include="Fixups\Libraries\InternetFixup.cs" />
+    <Compile Include="Fixups\Libraries\SHA224.cs" />
+    <Compile Include="Fixups\MD5Fixup.cs" />
+    <Compile Include="Fixups\Ntlm\BitConverterLE.cs" />
+    <Compile Include="Fixups\Ntlm\ChallengeResponse.cs" />
+    <Compile Include="Fixups\Ntlm\ChallengeResponse2.cs" />
+    <Compile Include="Fixups\Ntlm\MD4.cs" />
+    <Compile Include="Fixups\Ntlm\MessageBase.cs" />
+    <Compile Include="Fixups\Ntlm\NtlmAuthLevel.cs" />
+    <Compile Include="Fixups\Ntlm\NtlmFlags.cs" />
+    <Compile Include="Fixups\Ntlm\NtlmSettings.cs" />
+    <Compile Include="Fixups\Ntlm\Type1Message.cs" />
+    <Compile Include="Fixups\Ntlm\Type2Message.cs" />
+    <Compile Include="Fixups\Ntlm\Type3Message.cs" />
+    <Compile Include="Fixups\SHA1Fixup.cs" />
+    <Compile Include="Fixups\SHA224Fixup.cs" />
+    <Compile Include="Fixups\SHA256Fixup.cs" />
+    <Compile Include="Fixups\SHA384Fixup.cs" />
+    <Compile Include="Fixups\SHA512Fixup.cs" />
+    <Compile Include="Fixups\ScriptFixup.cs" />
+    <Compile Include="Fixups\SequenceIncrementFixup.cs" />
+    <Compile Include="Fixups\SequenceRandomFixup.cs" />
+    <Compile Include="Fixups\SspiFixup.cs" />
+    <Compile Include="Fixups\TCPChecksumFixup.cs" />
+    <Compile Include="Fixups\UDPChecksumFixup.cs" />
+    <Compile Include="Fixups\UnixTimeFixup.cs" />
+    <Compile Include="Fixups\VolatileFixup.cs" />
+    <Compile Include="Godel\GodelContext.cs" />
+    <Compile Include="Godel\GodelLogger.cs" />
+    <Compile Include="JsonUtilities.cs" />
+    <Compile Include="License\ILicense.cs" />
+    <Compile Include="License\IdentityClient.cs" />
+    <Compile Include="License\LicenseConfig.cs" />
+    <Compile Include="License\NullLicense.cs" />
+    <Compile Include="Loggers\BasePythonLogger.cs" />
+    <Compile Include="Loggers\DatabaseTarget.cs" />
+    <Compile Include="Loggers\JobLogger.cs" />
+    <Compile Include="Loggers\Metrics.cs" />
+    <Compile Include="Loggers\Visualizer.cs" />
+    <Compile Include="MutationStrategies\RandomDeterministicStrategy.cs" />
+    <Compile Include="MutationStrategies\RandomStrategy.cs" />
+    <Compile Include="MutationStrategies\ReplayStrategy.cs" />
+    <Compile Include="MutationStrategies\Sequential.cs" />
+    <Compile Include="MutationStrategies\WeightedMutationStrategy.cs" />
+    <Compile Include="Mutators\ActionDuplicate.cs" />
+    <Compile Include="Mutators\ActionRemove.cs" />
+    <Compile Include="Mutators\ActionSwap.cs" />
+    <Compile Include="Mutators\ArrayEdgeCase.cs" />
+    <Compile Include="Mutators\ArrayRandomizeOrder.cs" />
+    <Compile Include="Mutators\ArrayReverseOrder.cs" />
+    <Compile Include="Mutators\ArrayVariance.cs" />
+    <Compile Include="Mutators\BlobChangeFromNull.cs" />
+    <Compile Include="Mutators\BlobChangeRandom.cs" />
+    <Compile Include="Mutators\BlobChangeSpecial.cs" />
+    <Compile Include="Mutators\BlobChangeToNull.cs" />
+    <Compile Include="Mutators\BlobExpandAllRandom.cs" />
+    <Compile Include="Mutators\BlobExpandSingleIncrementing.cs" />
+    <Compile Include="Mutators\BlobExpandSingleRandom.cs" />
+    <Compile Include="Mutators\BlobExpandZero.cs" />
+    <Compile Include="Mutators\BlobReduce.cs" />
+    <Compile Include="Mutators\ChoiceSwitch.cs" />
+    <Compile Include="Mutators\DataElementBitFlipper.cs" />
+    <Compile Include="Mutators\DataElementDuplicate.cs" />
+    <Compile Include="Mutators\DataElementRemove.cs" />
+    <Compile Include="Mutators\DataElementSwapNear.cs" />
+    <Compile Include="Mutators\DoubleEdgeCase.cs" />
+    <Compile Include="Mutators\DoubleRandom.cs" />
+    <Compile Include="Mutators\DoubleVariance.cs" />
+    <Compile Include="Mutators\ExtraValues.cs" />
+    <Compile Include="Mutators\NumberEdgeCase.cs" />
+    <Compile Include="Mutators\NumberRandom.cs" />
+    <Compile Include="Mutators\NumberVariance.cs" />
+    <Compile Include="Mutators\SampleNinjaMutator.cs" />
+    <Compile Include="Mutators\SizedDataEdgeCase.cs" />
+    <Compile Include="Mutators\SizedDataVariance.cs" />
+    <Compile Include="Mutators\SizedEdgeCase.cs" />
+    <Compile Include="Mutators\SizedVariance.cs" />
+    <Compile Include="Mutators\StateChangeRandom.cs" />
+    <Compile Include="Mutators\StringAsciiRandom.cs" />
+    <Compile Include="Mutators\StringCaseLower.cs" />
+    <Compile Include="Mutators\StringCaseRandom.cs" />
+    <Compile Include="Mutators\StringCaseUpper.cs" />
+    <Compile Include="Mutators\StringLengthEdgeCase.cs" />
+    <Compile Include="Mutators\StringLengthVariance.cs" />
+    <Compile Include="Mutators\StringList.cs" />
+    <Compile Include="Mutators\StringSqlInjection.Data.cs" />
+    <Compile Include="Mutators\StringSqlInjection.cs" />
+    <Compile Include="Mutators\StringStatic.Data.cs" />
+    <Compile Include="Mutators\StringStatic.cs" />
+    <Compile Include="Mutators\StringUnicodeAbstractCharacters.cs" />
+    <Compile Include="Mutators\StringUnicodeFormatCharacters.cs" />
+    <Compile Include="Mutators\StringUnicodeInvalid.cs" />
+    <Compile Include="Mutators\StringUnicodeNonCharacters.cs" />
+    <Compile Include="Mutators\StringUnicodePlane0.cs" />
+    <Compile Include="Mutators\StringUnicodePlane1.cs" />
+    <Compile Include="Mutators\StringUnicodePlane14.cs" />
+    <Compile Include="Mutators\StringUnicodePlane15And16.cs" />
+    <Compile Include="Mutators\StringUnicodePlane2.cs" />
+    <Compile Include="Mutators\StringUnicodePrivateUseArea.cs" />
+    <Compile Include="Mutators\StringUtf16BomLength.cs" />
+    <Compile Include="Mutators\StringUtf16BomStatic.cs" />
+    <Compile Include="Mutators\StringUtf32BomLength.cs" />
+    <Compile Include="Mutators\StringUtf32BomStatic.cs" />
+    <Compile Include="Mutators\StringUtf8BomLength.cs" />
+    <Compile Include="Mutators\StringUtf8BomStatic.cs" />
+    <Compile Include="Mutators\StringUtf8ExtraBytes.cs" />
+    <Compile Include="Mutators\StringUtf8Invalid.cs" />
+    <Compile Include="Mutators\StringXmlW3C.cs" />
+    <Compile Include="Mutators\Utility\BlobMutator.cs" />
+    <Compile Include="Mutators\Utility\DoubleVarianceGenerator.cs" />
+    <Compile Include="Mutators\Utility\EdgeCaseGenerator.cs" />
+    <Compile Include="Mutators\Utility\IntegerEdgeCases.cs" />
+    <Compile Include="Mutators\Utility\IntegerVariance.cs" />
+    <Compile Include="Mutators\Utility\SizedHelpers.cs" />
+    <Compile Include="Mutators\Utility\StringBomLength.cs" />
+    <Compile Include="Mutators\Utility\StringBomStatic.cs" />
+    <Compile Include="Mutators\Utility\StringMutator.cs" />
+    <Compile Include="Mutators\Utility\SuperbestRandom.cs" />
+    <Compile Include="Mutators\Utility\VarianceGenerator.cs" />
+    <Compile Include="Mutators\Utility\WeightedList.cs" />
+    <Compile Include="OS\IDatagramImpl.cs" />
+    <Compile Include="OS\ISerialStream.cs" />
+    <Compile Include="OS\ISingleInstance.cs" />
+    <Compile Include="OS\Linux\Agent\Monitors\GdbDebugger.cs" />
+    <Compile Include="OS\Linux\Agent\Monitors\GdbServerMonitor.cs" />
+    <Compile Include="OS\Linux\Agent\Monitors\LinuxCoreFile.cs" />
+    <Compile Include="OS\Linux\DatagramImpl.cs" />
+    <Compile Include="OS\Linux\NetworkAdapter.cs" />
+    <Compile Include="OS\Linux\Pal.cs" />
+    <Compile Include="OS\Linux\ProcessImpl.cs" />
+    <Compile Include="OS\Linux\Publishers\BluetoothPublisher.cs" />
+    <Compile Include="OS\OSX\Agent\Monitors\CrashReporter.cs" />
+    <Compile Include="OS\OSX\Agent\Monitors\CrashWrangler.cs" />
+    <Compile Include="OS\OSX\DatagramImpl.cs" />
+    <Compile Include="OS\OSX\NetworkAdapter.cs" />
+    <Compile Include="OS\OSX\Pal.cs" />
+    <Compile Include="OS\OSX\ProcessImpl.cs" />
+    <Compile Include="OS\Pal.cs" />
+    <Compile Include="OS\Unix\CanaryImpl.cs" />
+    <Compile Include="OS\Unix\DatagramImpl.cs" />
+    <Compile Include="OS\Unix\ProcessImpl.cs" />
+    <Compile Include="OS\Unix\SerialPortStream.cs" />
+    <Compile Include="OS\Unix\SingleInstance.cs" />
+    <Compile Include="OS\Windows\Agent\Monitors\ButtonClicker.cs" />
+    <Compile Include="OS\Windows\Agent\Monitors\CleanupRegistry.cs" />
+    <Compile Include="OS\Windows\Agent\Monitors\PageHeap.cs" />
+    <Compile Include="OS\Windows\Agent\Monitors\PopupWatcher.cs" />
+    <Compile Include="OS\Windows\Agent\Monitors\WindowsDebuggerHybrid.cs" />
+    <Compile Include="OS\Windows\Agent\Monitors\WindowsKernelDebugger.cs" />
+    <Compile Include="OS\Windows\Agent\Monitors\WindowsService.cs" />
+    <Compile Include="OS\Windows\DatagramImpl.cs" />
+    <Compile Include="OS\Windows\Debugger\DebugEngine.cs" />
+    <Compile Include="OS\Windows\Debugger\DebugEngineInstance.cs" />
+    <Compile Include="OS\Windows\Debugger\DebuggerProxy.cs" />
+    <Compile Include="OS\Windows\Debugger\DebuggerServer.cs" />
+    <Compile Include="OS\Windows\Debugger\IDebugger.cs" />
+    <Compile Include="OS\Windows\Debugger\IDebuggerInstance.cs" />
+    <Compile Include="OS\Windows\Debugger\IKernelDebugger.cs" />
+    <Compile Include="OS\Windows\Debugger\KernelDebugger.cs" />
+    <Compile Include="OS\Windows\Debugger\KernelDebuggerInstance.cs" />
+    <Compile Include="OS\Windows\Debugger\SystemDebugger.cs" />
+    <Compile Include="OS\Windows\Debugger\SystemDebuggerInstance.cs" />
+    <Compile Include="OS\Windows\Interop.cs" />
+    <Compile Include="OS\Windows\JobObject.cs" />
+    <Compile Include="OS\Windows\NetworkAdapter.cs" />
+    <Compile Include="OS\Windows\Pal.cs" />
+    <Compile Include="OS\Windows\Privilege.cs" />
+    <Compile Include="OS\Windows\ProcessImpl.cs" />
+    <Compile Include="OS\Windows\Publishers\Com\ComContainer.cs" />
+    <Compile Include="OS\Windows\Publishers\Com\ComContainerServer.cs" />
+    <Compile Include="OS\Windows\Publishers\Com\IComContainer.cs" />
+    <Compile Include="OS\Windows\Publishers\ComPublisher.cs" />
+    <Compile Include="OS\Windows\Remotable.cs" />
+    <Compile Include="OS\Windows\SingleInstance.cs" />
+    <Compile Include="OS\Windows\WinSerialStream.cs" />
+    <Compile Include="PitCompiler.cs" />
+    <Compile Include="PitDefines.cs" />
+    <Compile Include="PitInjector.cs" />
+    <Compile Include="PitResource.cs" />
+    <Compile Include="ProPitParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publishers\BasePythonPublisher.cs" />
+    <Compile Include="Publishers\BufferedStreamPublisher.cs" />
+    <Compile Include="Publishers\ConsoleHexPublisher.cs" />
+    <Compile Include="Publishers\ConsolePublisher.cs" />
+    <Compile Include="Publishers\DatagramPublisher.cs" />
+    <Compile Include="Publishers\EthernetPublisher.cs" />
+    <Compile Include="Publishers\FilePerIterationPublisher.cs" />
+    <Compile Include="Publishers\FilePublisher.cs" />
+    <Compile Include="Publishers\HttpPublisher.cs" />
+    <Compile Include="Publishers\NullPublisher.cs" />
+    <Compile Include="Publishers\PcapListener.cs" />
+    <Compile Include="Publishers\RawEtherPublisher.cs" />
+    <Compile Include="Publishers\RawIPv4Publisher.cs" />
+    <Compile Include="Publishers\RawIPv6Publisher.cs" />
+    <Compile Include="Publishers\SerialPortPublisher.cs" />
+    <Compile Include="Publishers\SocketWritePcapReadPublisher.cs" />
+    <Compile Include="Publishers\Ssl\PeachyTlsDHKeyExchange.cs" />
+    <Compile Include="Publishers\Ssl\PeachyTlsDheKeyExchange.cs" />
+    <Compile Include="Publishers\Ssl\PeachyTlsECDHKeyExchange.cs" />
+    <Compile Include="Publishers\Ssl\PeachyTlsECDheKeyExchange.cs" />
+    <Compile Include="Publishers\Ssl\PeachyTlsRsaKeyExchange.cs" />
+    <Compile Include="Publishers\SslClientPublisher.cs" />
+    <Compile Include="Publishers\SslListenerPublisher.cs" />
+    <Compile Include="Publishers\StreamPublisher.cs" />
+    <Compile Include="Publishers\TcpClientPublisher.cs" />
+    <Compile Include="Publishers\TcpListenerPublisher.cs" />
+    <Compile Include="Publishers\TcpPublisher.cs" />
+    <Compile Include="Publishers\UdpPublisher.cs" />
+    <Compile Include="Publishers\WebSocketPublisher.cs" />
+    <Compile Include="Publishers\ZipPublisher.cs" />
+    <Compile Include="Runtime\BaseProgram.cs" />
+    <Compile Include="Runtime\ConsoleProgram.cs" />
+    <Compile Include="Runtime\ConsoleWatcher.cs" />
+    <Compile Include="Runtime\InteractiveConsoleWatcher.cs" />
+    <Compile Include="Runtime\JobRunner.cs" />
+    <Compile Include="Runtime\Service.cs" />
+    <Compile Include="Runtime\Worker.cs" />
+    <Compile Include="Storage\AsyncDbCache.cs" />
+    <Compile Include="Storage\Attributes.cs" />
+    <Compile Include="Storage\Database.cs" />
+    <Compile Include="Storage\JobDatabase.cs" />
+    <Compile Include="Storage\Metrics.cs" />
+    <Compile Include="Storage\NodeDatabase.cs" />
+    <Compile Include="Storage\SampleNinjaDatabase.cs" />
+    <Compile Include="Storage\Sql.cs" />
+    <Compile Include="Storage\SqliteInitializer.cs" />
+    <Compile Include="Transformers\BasePythonTransformer.cs" />
+    <Compile Include="Transformers\Compress\Bz2Compress.cs" />
+    <Compile Include="Transformers\Compress\Bz2Decompress.cs" />
+    <Compile Include="Transformers\Compress\GzipCompress.cs" />
+    <Compile Include="Transformers\Compress\GzipDecompress.cs" />
+    <Compile Include="Transformers\Crypto\Aes128.cs" />
+    <Compile Include="Transformers\Crypto\Des.cs" />
+    <Compile Include="Transformers\Crypto\Hmac.cs" />
+    <Compile Include="Transformers\Crypto\Md5.cs" />
+    <Compile Include="Transformers\Crypto\Sha1.cs" />
+    <Compile Include="Transformers\Crypto\Sha256.cs" />
+    <Compile Include="Transformers\Crypto\SymmetricAlgorithmTransformer.cs" />
+    <Compile Include="Transformers\Crypto\TripleDes.cs" />
+    <Compile Include="Transformers\Encode\Base64Decode.cs" />
+    <Compile Include="Transformers\Encode\Base64Encode.cs" />
+    <Compile Include="Transformers\Encode\Hex.cs" />
+    <Compile Include="Transformers\Encode\HtmlDecode.cs" />
+    <Compile Include="Transformers\Encode\HtmlEncode.cs" />
+    <Compile Include="Transformers\Encode\Ipv4StringToOctet.cs" />
+    <Compile Include="Transformers\Encode\Ipv6StringToOctet.cs" />
+    <Compile Include="Transformers\Encode\JsEncode.cs" />
+    <Compile Include="Transformers\Encode\NetBiosDecode.cs" />
+    <Compile Include="Transformers\Encode\NetBiosEncode.cs" />
+    <Compile Include="Transformers\Encode\SidStringToBytes.cs" />
+    <Compile Include="Transformers\Encode\UrlEncode.cs" />
+    <Compile Include="Transformers\Eval.cs" />
+    <Compile Include="Transformers\Null.cs" />
+    <Compile Include="Transformers\Truncate.cs" />
+    <Compile Include="Transformers\Type\IntToHex.cs" />
+    <Compile Include="WebServices\Extensions.cs" />
+    <Compile Include="WebServices\ExternalJobMonitor.cs" />
+    <Compile Include="WebServices\InternalJobMonitor.cs" />
+    <Compile Include="WebServices\JobMonitor.cs" />
+    <Compile Include="WebServices\Models\Error.cs" />
+    <Compile Include="WebServices\Models\Fault.cs" />
+    <Compile Include="WebServices\Models\Group.cs" />
+    <Compile Include="WebServices\Models\Job.cs" />
+    <Compile Include="WebServices\Models\JobMetrics.cs" />
+    <Compile Include="WebServices\Models\Library.cs" />
+    <Compile Include="WebServices\Models\LibraryPit.cs" />
+    <Compile Include="WebServices\Models\LibraryVersion.cs" />
+    <Compile Include="WebServices\Models\License.cs" />
+    <Compile Include="WebServices\Models\Monitor.cs" />
+    <Compile Include="WebServices\Models\Node.cs" />
+    <Compile Include="WebServices\Models\PeachVersion.cs" />
+    <Compile Include="WebServices\Models\Pit.cs" />
+    <Compile Include="WebServices\Models\PitConfig.cs" />
+    <Compile Include="WebServices\Models\PitCopy.cs" />
+    <Compile Include="WebServices\Models\PitFile.cs" />
+    <Compile Include="WebServices\Models\Report.cs" />
+    <Compile Include="WebServices\Models\Tag.cs" />
+    <Compile Include="WebServices\Models\TestEvent.cs" />
+    <Compile Include="WebServices\Models\TestResult.cs" />
+    <Compile Include="WebServices\Models\Visualizer.cs" />
+    <Compile Include="WebServices\MonitorMetadata.cs" />
+    <Compile Include="WebServices\PitDatabase.cs" />
+    <Compile Include="WebServices\TimeSpanJsonConverter.cs" />
+    <Compile Include="Xml\Defaults.cs" />
+    <Compile Include="Xml\Dom.cs" />
+    <Compile Include="Xml\Generator.cs" />
+    <Compile Include="Xml\Parser.cs" />
+    <Compile Include="Xml\ParserDtd.cs" />
+    <Compile Include="Xml\ParserRelaxed.cs" />
+    <Compile Include="XmlFragmentWriter.cs" />
+    <Compile Include="XmlTools.cs" />
+    <EmbeddedResource Include="Resources\Fonts\DroidSans.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\DroidSansFallback.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\DroidSansMono.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Roboto-Light.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\Roboto-Regular.ttf" />
+    <EmbeddedResource Include="Resources\Metrics.sql" />
+    <EmbeddedResource Include="Resources\MonitorMetadata.json" />
+    <EmbeddedResource Include="Resources\NamedSequences.txt" />
+    <EmbeddedResource Include="Resources\PeachCrashHandler.sh" />
+    <EmbeddedResource Include="Resources\snmpv2c.pcap" />
+    <EmbeddedResource Include="Resources\xmltests.zip" />
+    <Content Include="WebServices\Models\Model.cd" />
+    <Content Include="Install\PCANBasic_NET.dll.config">
+      <Link>PCANBasic_NET.dll.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Install\SharpPcap.dll.config">
+      <Link>SharpPcap.dll.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\peach\__init__.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\peach\webproxy.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.2.7.5\lib\Net45\IronPython.Modules.dll">
+      <Link>IronPython.Modules.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OS\Windows\Debuggers\DebugEngine\MSEC64.dll">
+      <Link>Debuggers\DebugEngine\MSEC64.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OS\Windows\Debuggers\DebugEngine\MSEC86.dll">
+      <Link>Debuggers\DebugEngine\MSEC86.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="wscript_build" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

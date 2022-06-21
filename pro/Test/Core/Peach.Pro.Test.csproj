@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">win_debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CC14040-006E-4C93-9038-74412DB8873F}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <BaseIntermediateOutputPath>..\..\..\.depproj\Peach\obj\</BaseIntermediateOutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Peach.Pro.Test.Core</RootNamespace>
+    <AssemblyName>Peach.Pro.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\..\.depproj\Peach\bin\win_debug_x64</OutputPath>
+    <DefineConstants>PEACH;DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\..\.depproj\Peach\bin\win_debug_x64\Peach.Pro.Test.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <PostBuildEvent>copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_debug\pro\Test\Apps\CrashingProgram\CrashingProgram.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x64\CrashingProgram.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_debug\pro\Test\Apps\CrashingFileConsumer\CrashingFileConsumer.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x64\CrashingFileConsumer.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_debug\pro\Test\Apps\CrashableServer\CrashableServer.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x64\CrashableServer.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_debug\pro\Test\Apps\CrashTest\CrashTest.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x64\CrashTest.exe"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\..\.depproj\Peach\bin\win_debug_x86</OutputPath>
+    <DefineConstants>PEACH;DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\..\.depproj\Peach\bin\win_debug_x86\Peach.Pro.Test.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <PostBuildEvent>copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x86_debug\pro\Test\Apps\CrashingProgram\CrashingProgram.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x86\CrashingProgram.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x86_debug\pro\Test\Apps\CrashingFileConsumer\CrashingFileConsumer.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x86\CrashingFileConsumer.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x86_debug\pro\Test\Apps\CrashableServer\CrashableServer.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x86\CrashableServer.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x86_debug\pro\Test\Apps\CrashTest\CrashTest.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x86\CrashTest.exe"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\..\.depproj\Peach\bin\win_release_x64</OutputPath>
+    <DefineConstants>PEACH;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\..\.depproj\Peach\bin\win_release_x64\Peach.Pro.Test.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <PostBuildEvent>copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_release\pro\Test\Apps\CrashingProgram\CrashingProgram.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_release_x64\CrashingProgram.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_release\pro\Test\Apps\CrashingFileConsumer\CrashingFileConsumer.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_release_x64\CrashingFileConsumer.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_release\pro\Test\Apps\CrashableServer\CrashableServer.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_release_x64\CrashableServer.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_release\pro\Test\Apps\CrashTest\CrashTest.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_release_x64\CrashTest.exe"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\..\.depproj\Peach\bin\win_release_x86</OutputPath>
+    <DefineConstants>PEACH;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\..\.depproj\Peach\bin\win_release_x86\Peach.Pro.Test.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <PostBuildEvent>copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x86_release\pro\Test\Apps\CrashingProgram\CrashingProgram.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_release_x86\CrashingProgram.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x86_release\pro\Test\Apps\CrashingFileConsumer\CrashingFileConsumer.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_release_x86\CrashingFileConsumer.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x86_release\pro\Test\Apps\CrashableServer\CrashableServer.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_release_x86\CrashableServer.exe"
+copy "D:\work\program\protocol-fuzzer-ce-main\slag\win_x86_release\pro\Test\Apps\CrashTest\CrashTest.exe" "D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_release_x86\CrashTest.exe"</PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\..\paket\packages\Castle.Core\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>..\..\..\paket\packages\Dapper\lib\net45\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\paket\packages\DotNetZip\lib\net20\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>..\..\..\paket\packages\Mono.Posix-4.5\lib\net45\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\..\..\paket\packages\Moq\lib\net45\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\..\..\paket\packages\NLog\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\paket\packages\Newtonsoft.Json\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PacketDotNet">
+      <HintPath>..\..\..\paket\packages\PacketDotNet\lib\PacketDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Patterns.Logging">
+      <HintPath>..\..\..\paket\packages\Patterns.Logging\lib\portable-net45+dnxcore50+sl4+wp71+win8+wpa81\Patterns.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpPcap">
+      <HintPath>..\..\..\paket\packages\SharpPcap\lib\SharpPcap.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketHttpListener">
+      <HintPath>..\..\..\paket\packages\SocketHttpListener\lib\net45\SocketHttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\paket\packages\NUnit\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite"  Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x64' ">
+      <HintPath>..\..\..\3rdParty\System.Data.SQLite.x64.1.0.98.1\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite"  Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x86' ">
+      <HintPath>..\..\..\3rdParty\System.Data.SQLite.x86.1.0.98.1\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite"  Condition=" '$(Configuration)|$(Platform)' == 'win_release|x64' ">
+      <HintPath>..\..\..\3rdParty\System.Data.SQLite.x64.1.0.98.1\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite"  Condition=" '$(Configuration)|$(Platform)' == 'win_release|x86' ">
+      <HintPath>..\..\..\3rdParty\System.Data.SQLite.x86.1.0.98.1\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\3rdParty\BouncyCastle\crypto\BouncyCastle.Crypto.csproj">
+      <Project>{6338FB97-6ABD-4814-864D-4F0BE21DFC5A}</Project>
+      <Name>BouncyCastle.Crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Core\Peach.Core.csproj">
+      <Project>{B085A5AB-EC0F-4268-9C58-7D6FB5482841}</Project>
+      <Name>Peach.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\core\Test\Peach.Core.Test.csproj">
+      <Project>{3DC049EA-5EAF-4AC2-9DA4-772E5CA395D7}</Project>
+      <Name>Peach.Core.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Peach.Pro.csproj">
+      <Project>{F95A10D1-B775-4D20-BB03-58F061053EBD}</Project>
+      <Name>Peach.Pro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PitTester\Peach.Pro.PitTester.csproj">
+      <Project>{BD5F1291-9F18-4653-928D-C582F362BC20}</Project>
+      <Name>Peach.Pro.PitTester</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\3rdParty\Renci.SshNet\Renci.SshNet.csproj">
+      <Project>{E496C645-7498-4C61-97C0-3B0AC55278C2}</Project>
+      <Name>Renci.SshNet</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agent\AgentTests.cs" />
+    <Compile Include="Agent\Http\HttpChannelHandler.cs" />
+    <Compile Include="Agent\Http\HttpServer.cs" />
+    <Compile Include="Agent\HttpChannelTests.cs" />
+    <Compile Include="Agent\LegacyMonitorTests.cs" />
+    <Compile Include="Agent\RestTests.cs" />
+    <Compile Include="Analyzers\AnalyzerTests.cs" />
+    <Compile Include="Analyzers\BinaryAnalyzerTests.cs" />
+    <Compile Include="Analyzers\StringTokenTests.cs" />
+    <Compile Include="Analyzers\XmlAnalyzerTests.cs" />
+    <Compile Include="Analyzers\ZipAnalyzerTests.cs" />
+    <Compile Include="CrackingTests\ArrayTests.cs" />
+    <Compile Include="CrackingTests\BlobTests.cs" />
+    <Compile Include="CrackingTests\BlockTests.cs" />
+    <Compile Include="CrackingTests\ChoiceTests.cs" />
+    <Compile Include="CrackingTests\ContraintTests.cs" />
+    <Compile Include="CrackingTests\CountRelationTests.cs" />
+    <Compile Include="CrackingTests\DoubleTests.cs" />
+    <Compile Include="CrackingTests\FlagsTests.cs" />
+    <Compile Include="CrackingTests\LengthTests.cs" />
+    <Compile Include="CrackingTests\NumberTests.cs" />
+    <Compile Include="CrackingTests\OffsetRelationTests.cs" />
+    <Compile Include="CrackingTests\PaddingTests.cs" />
+    <Compile Include="CrackingTests\PlacementTests.cs" />
+    <Compile Include="CrackingTests\SequenceTests.cs" />
+    <Compile Include="CrackingTests\SizeRelationTests.cs" />
+    <Compile Include="CrackingTests\StringTests.cs" />
+    <Compile Include="CrackingTests\TokenTests.cs" />
+    <Compile Include="CrackingTests\XmlTests.cs" />
+    <Compile Include="Dom\BoolTests.cs" />
+    <Compile Include="Dom\DoubleTests.cs" />
+    <Compile Include="Dom\VarNumberTests.cs" />
+    <Compile Include="Dom\WriteXmlTests.cs" />
+    <Compile Include="Dom\XmlFragmentTests.cs" />
+    <Compile Include="EdgeCaseGeneratorTests.cs" />
+    <Compile Include="FixupCloneTests.cs" />
+    <Compile Include="Fixups\CiscoFixupTests.cs" />
+    <Compile Include="Fixups\CopyValueFixupTests.cs" />
+    <Compile Include="Fixups\Crc32DualFixupTests.cs" />
+    <Compile Include="Fixups\CrcFixupTests.cs" />
+    <Compile Include="Fixups\ExpressionFixupTests.cs" />
+    <Compile Include="Fixups\FixupRelationsTest.cs" />
+    <Compile Include="Fixups\FromFileFixup.cs" />
+    <Compile Include="Fixups\HMACFixupTests.cs" />
+    <Compile Include="Fixups\IcmpChecksumFixupTests.cs" />
+    <Compile Include="Fixups\IcmpV6ChecksumFixupTest.cs" />
+    <Compile Include="Fixups\IsoFletcher16FixupTests.cs" />
+    <Compile Include="Fixups\LRCFixupTests.cs" />
+    <Compile Include="Fixups\MD5FixupTests.cs" />
+    <Compile Include="Fixups\SHA1FixupTests.cs" />
+    <Compile Include="Fixups\SHA224FixupTests.cs" />
+    <Compile Include="Fixups\SHA256FixupTests.cs" />
+    <Compile Include="Fixups\SHA384FixupTests.cs" />
+    <Compile Include="Fixups\SHA512FixupTests.cs" />
+    <Compile Include="Fixups\ScriptFixupTests.cs" />
+    <Compile Include="Fixups\SequenceIncrementFixupTests.cs" />
+    <Compile Include="Fixups\SequenceRandomFixupTests.cs" />
+    <Compile Include="Fixups\TCPChecksumFixupTests.cs" />
+    <Compile Include="Fixups\UDPChecksumFixupTests.cs" />
+    <Compile Include="Fixups\UnixTimeFixupTests.cs" />
+    <Compile Include="Godel\BasicTests.cs" />
+    <Compile Include="JobRunnerTests.cs" />
+    <Compile Include="JsonPathConverterTests.cs" />
+    <Compile Include="Loggers\FileTests.cs" />
+    <Compile Include="Loggers\JobLoggerTests.cs" />
+    <Compile Include="Monitors\CleanupFolderMoniorTests.cs" />
+    <Compile Include="Monitors\MemoryMonitorTests.cs" />
+    <Compile Include="Monitors\PcapMonitorTests.cs" />
+    <Compile Include="Monitors\PingMonitorTests.cs" />
+    <Compile Include="Monitors\ProcessKillerMonitorTests.cs" />
+    <Compile Include="Monitors\ProcessMonitorTests.cs" />
+    <Compile Include="Monitors\ReplayMonitorTests.cs" />
+    <Compile Include="Monitors\RunCommandTests.cs" />
+    <Compile Include="Monitors\SaveFileMonitorTests.cs" />
+    <Compile Include="MutationStrategies\RandomDeterministicTest.cs" />
+    <Compile Include="MutationStrategies\RandomStrategyTests.cs" />
+    <Compile Include="MutationStrategies\ReplayStrategyTests.cs" />
+    <Compile Include="MutationStrategies\SequentialTest.cs" />
+    <Compile Include="Mutators\ArrayEdgeCaseTest.cs" />
+    <Compile Include="Mutators\ArrayRandomizeOrderTests.cs" />
+    <Compile Include="Mutators\ArrayReverseOrderTests.cs" />
+    <Compile Include="Mutators\ArrayVarianceTests.cs" />
+    <Compile Include="Mutators\BlobChangeFromNullTests.cs" />
+    <Compile Include="Mutators\BlobChangeRandomTests.cs" />
+    <Compile Include="Mutators\BlobChangeSpecialTests.cs" />
+    <Compile Include="Mutators\BlobChangeToNullTests.cs" />
+    <Compile Include="Mutators\BlobExpandAllRandomTests.cs" />
+    <Compile Include="Mutators\BlobExpandSingleIncrementingTests.cs" />
+    <Compile Include="Mutators\BlobExpandSingleRandomTests.cs" />
+    <Compile Include="Mutators\BlobExpandZeroTests.cs" />
+    <Compile Include="Mutators\BlobReduceTests.cs" />
+    <Compile Include="Mutators\DataElementBitFlipperTests.cs" />
+    <Compile Include="Mutators\DataElementDuplicateTests.cs" />
+    <Compile Include="Mutators\DataElementRemoveTests.cs" />
+    <Compile Include="Mutators\DataElementSwapNearTests.cs" />
+    <Compile Include="Mutators\DoubleRandomTests.cs" />
+    <Compile Include="Mutators\DoubleVarianceTests.cs" />
+    <Compile Include="Mutators\ExtraValuesTests.cs" />
+    <Compile Include="Mutators\NoMutatorTests.cs" />
+    <Compile Include="Mutators\NumberEdgeCaseTests.cs" />
+    <Compile Include="Mutators\NumberRandomTests.cs" />
+    <Compile Include="Mutators\NumberVarianceTests.cs" />
+    <Compile Include="Mutators\SampleNinjaMutatorTest.cs" />
+    <Compile Include="Mutators\SizedDataEdgeCaseTests.cs" />
+    <Compile Include="Mutators\SizedDataNumericalEdgeCasesMutatorTests.cs" />
+    <Compile Include="Mutators\SizedDataVaranceMutatorTests.cs" />
+    <Compile Include="Mutators\SizedDataVarianceTests.cs" />
+    <Compile Include="Mutators\SizedEdgeCaseTests.cs" />
+    <Compile Include="Mutators\SizedNumericalEdgeCasesMutatorTests.cs" />
+    <Compile Include="Mutators\SizedVarianceMutatorTests.cs" />
+    <Compile Include="Mutators\SizedVarianceTests.cs" />
+    <Compile Include="Mutators\StringAsciiRandomTests.cs" />
+    <Compile Include="Mutators\StringCaseLowerTests.cs" />
+    <Compile Include="Mutators\StringCaseRandomTests.cs" />
+    <Compile Include="Mutators\StringCaseUpperTests.cs" />
+    <Compile Include="Mutators\StringLengthEdgeCaseTests.cs" />
+    <Compile Include="Mutators\StringLengthVarianceTests.cs" />
+    <Compile Include="Mutators\StringListTests.cs" />
+    <Compile Include="Mutators\StringSqlInjectionTests.cs" />
+    <Compile Include="Mutators\StringStaticTests.cs" />
+    <Compile Include="Mutators\StringUnicodeAbstractCharactersTests.cs" />
+    <Compile Include="Mutators\StringUnicodeFormatCharactersTests.cs" />
+    <Compile Include="Mutators\StringUnicodeInvalidTests.cs" />
+    <Compile Include="Mutators\StringUnicodeNonCharactersTests.cs" />
+    <Compile Include="Mutators\StringUnicodePlane0Tests.cs" />
+    <Compile Include="Mutators\StringUnicodePlane14Tests.cs" />
+    <Compile Include="Mutators\StringUnicodePlane15And16Tests.cs" />
+    <Compile Include="Mutators\StringUnicodePlane1Tests.cs" />
+    <Compile Include="Mutators\StringUnicodePlane2Tests.cs" />
+    <Compile Include="Mutators\StringUnicodePrivateUseAreaTests.cs" />
+    <Compile Include="Mutators\StringUtf16BomLengthTests.cs" />
+    <Compile Include="Mutators\StringUtf16BomStaticTests.cs" />
+    <Compile Include="Mutators\StringUtf32BomLengthTests.cs" />
+    <Compile Include="Mutators\StringUtf32BomStaticTests.cs" />
+    <Compile Include="Mutators\StringUtf8BomLengthTests.cs" />
+    <Compile Include="Mutators\StringUtf8BomStaticTests.cs" />
+    <Compile Include="Mutators\StringUtf8ExtraBytesTests.cs" />
+    <Compile Include="Mutators\StringUtf8InvalidTests.cs" />
+    <Compile Include="Mutators\StringXmlW3CTests.cs" />
+    <Compile Include="Mutators\Utility\IntegerEdgeCasesTests.cs" />
+    <Compile Include="Mutators\Utility\IntegerVarianceTests.cs" />
+    <Compile Include="OutputTests\SizeRelationTests.cs" />
+    <Compile Include="PeachXPathTests.cs" />
+    <Compile Include="PitCompilerTests.cs" />
+    <Compile Include="PitDefinesTests.cs" />
+    <Compile Include="PitParserTests\ArrayTests.cs" />
+    <Compile Include="PitParserTests\BlobTests.cs" />
+    <Compile Include="PitParserTests\BlockTests.cs" />
+    <Compile Include="PitParserTests\ChoiceTests.cs" />
+    <Compile Include="PitParserTests\DataTests.cs" />
+    <Compile Include="PitParserTests\DefaultValuesTests.cs" />
+    <Compile Include="PitParserTests\DefaultsTests.cs" />
+    <Compile Include="PitParserTests\DoubleTests.cs" />
+    <Compile Include="PitParserTests\EmbeddedTests.cs" />
+    <Compile Include="PitParserTests\FieldIdTests.cs" />
+    <Compile Include="PitParserTests\FlagTests.cs" />
+    <Compile Include="PitParserTests\GeneralTests.cs" />
+    <Compile Include="PitParserTests\IncludeTests.cs" />
+    <Compile Include="PitParserTests\MiscTests.cs" />
+    <Compile Include="PitParserTests\NumberTests.cs" />
+    <Compile Include="PitParserTests\PaddingTests.cs" />
+    <Compile Include="PitParserTests\RefTests.cs" />
+    <Compile Include="PitParserTests\SequenceTests.cs" />
+    <Compile Include="PitParserTests\StreamTests.cs" />
+    <Compile Include="PitParserTests\StringTests.cs" />
+    <Compile Include="PitParserTests\TestTests.cs" />
+    <Compile Include="PitParserTests\XmlTests.cs" />
+    <Compile Include="PitReaderTests.cs" />
+    <Compile Include="PitTesterTests.cs" />
+    <Compile Include="PlatformTests.cs" />
+    <Compile Include="ProcessTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publishers\ConsoleHexPublisher.cs" />
+    <Compile Include="Publishers\DatagramPublisherTests.cs" />
+    <Compile Include="Publishers\FilePerIterationTests.cs" />
+    <Compile Include="Publishers\FilePublisherTests.cs" />
+    <Compile Include="Publishers\HttpPublisherTests.cs" />
+    <Compile Include="Publishers\InputTests.cs" />
+    <Compile Include="Publishers\ParameterTests.cs" />
+    <Compile Include="Publishers\RemotePubilsherTests.cs" />
+    <Compile Include="Publishers\RestPublisherTests.cs" />
+    <Compile Include="Publishers\SslPublisherTests.cs" />
+    <Compile Include="Publishers\TcpListenerPublisherTests.cs" />
+    <Compile Include="Publishers\TcpPublisherTests.cs" />
+    <Compile Include="Publishers\WebSocketPublisherTests.cs" />
+    <Compile Include="Publishers\ZipPublisherTests.cs" />
+    <Compile Include="RelationCountTests.cs" />
+    <Compile Include="RelationOffsetTest.cs" />
+    <Compile Include="RelationSizeTest.cs" />
+    <Compile Include="ReportedTests.cs" />
+    <Compile Include="ReproIterationTests.cs" />
+    <Compile Include="ReproSessionTests.cs" />
+    <Compile Include="RunTests.cs" />
+    <Compile Include="ScriptingTests.cs" />
+    <Compile Include="SingleInstanceTests.cs" />
+    <Compile Include="StateModel\ActionTests.cs" />
+    <Compile Include="StateModel\ActionWhenTests.cs" />
+    <Compile Include="StateModel\InputTests.cs" />
+    <Compile Include="StateModel\OutputTests.cs" />
+    <Compile Include="StateModel\SlurpTests.cs" />
+    <Compile Include="Storage\DatabaseTests.cs" />
+    <Compile Include="Storage\JobTests.cs" />
+    <Compile Include="Storage\MetricsCacheTests.cs" />
+    <Compile Include="Storage\MetricsTests.cs" />
+    <Compile Include="StringMutatorTester.cs" />
+    <Compile Include="SuperbestRandomTests.cs" />
+    <Compile Include="TestBase.cs" />
+    <Compile Include="Transformers\Compress\Bz2CompressTests.cs" />
+    <Compile Include="Transformers\Compress\Bz2DecompressTests.cs" />
+    <Compile Include="Transformers\Compress\GzipCompressTests.cs" />
+    <Compile Include="Transformers\Compress\GzipDecompressTests.cs" />
+    <Compile Include="Transformers\Crypto\Aes128Tests.cs" />
+    <Compile Include="Transformers\Crypto\ApacheMd5CryptTests.cs" />
+    <Compile Include="Transformers\Crypto\CryptTests.cs" />
+    <Compile Include="Transformers\Crypto\CvsScrambleTests.cs" />
+    <Compile Include="Transformers\Crypto\HmacTests.cs" />
+    <Compile Include="Transformers\Crypto\Md5Tests.cs" />
+    <Compile Include="Transformers\Crypto\Sha1Tests.cs" />
+    <Compile Include="Transformers\Crypto\Sha256Tests.cs" />
+    <Compile Include="Transformers\Crypto\TripleDesTests.cs" />
+    <Compile Include="Transformers\Crypto\UnixMd5CryptTests.cs" />
+    <Compile Include="Transformers\Encode\Base64DecodeTests.cs" />
+    <Compile Include="Transformers\Encode\Base64EncodeTests.cs" />
+    <Compile Include="Transformers\Encode\HexTests.cs" />
+    <Compile Include="Transformers\Encode\HtmlDecodeTests.cs" />
+    <Compile Include="Transformers\Encode\HtmlEncodeTests.cs" />
+    <Compile Include="Transformers\Encode\Ipv4StringToOctetTests.cs" />
+    <Compile Include="Transformers\Encode\Ipv6StringToOctetTests.cs" />
+    <Compile Include="Transformers\Encode\JsEncodeTests.cs" />
+    <Compile Include="Transformers\Encode\NetBiosDecodeTests.cs" />
+    <Compile Include="Transformers\Encode\NetBiosEncodeTests.cs" />
+    <Compile Include="Transformers\Encode\SidStringToBytesTests.cs" />
+    <Compile Include="Transformers\Encode\UrlEncodeTests.cs" />
+    <Compile Include="Transformers\EvalTests.cs" />
+    <Compile Include="Transformers\NullTests.cs" />
+    <Compile Include="Transformers\TransformerTests.cs" />
+    <Compile Include="Transformers\TruncateTests.cs" />
+    <Compile Include="Transformers\Type\IntToHexTests.cs" />
+    <Compile Include="TuningTests.cs" />
+    <Compile Include="VarianceGeneratorTests.cs" />
+    <Compile Include="WebServices\JobMonitorTests.cs" />
+    <Compile Include="WebServices\JsonToPit.cs" />
+    <Compile Include="WebServices\MonitorParamTests.cs" />
+    <Compile Include="WebServices\PitDatabaseTests.cs" />
+    <Compile Include="WeightedListTests.cs" />
+    <Compile Include="XmlToolsTests.cs" />
+    <None Include="wscript_build" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

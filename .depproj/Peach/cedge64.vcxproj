@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0"
+	xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="win_debug|x64">
+			<Configuration>win_debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="win_release|x64">
+			<Configuration>win_release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{C24C47B8-DF6C-4C57-A4DE-FA4D35731025}</ProjectGuid>
+		<Keyword>MakeFileProj</Keyword>
+		<ProjectName>cedge64</ProjectName>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='win_debug|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<OutDir>D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach</OutDir>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='win_release|x64'" Label="Configuration">
+		<ConfigurationType>Makefile</ConfigurationType>
+		<OutDir>D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach</OutDir>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Label="ExtensionSettings">
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='win_debug|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='win_release|x64'">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+	</ImportGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='win_debug|x64'">
+		<NMakeBuildCommandLine>cd /d &quot;D:\work\program\protocol-fuzzer-ce-main&quot; &amp; &quot;C:\Python27\python.exe&quot; waf build --execsolution=D:\work\program\protocol-fuzzer-ce-main\Peach.sln --targets=cedge64 --variant=win_x64_debug</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>cd /d &quot;D:\work\program\protocol-fuzzer-ce-main&quot; &amp; &quot;C:\Python27\python.exe&quot; waf clean build --execsolution=D:\work\program\protocol-fuzzer-ce-main\Peach.sln --targets=cedge64 --variant=win_x64_debug</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>cd /d &quot;D:\work\program\protocol-fuzzer-ce-main&quot; &amp; &quot;C:\Python27\python.exe&quot; waf clean --execsolution=D:\work\program\protocol-fuzzer-ce-main\Peach.sln --targets=cedge64 --variant=win_x64_debug</NMakeCleanCommandLine>
+		<NMakeIncludeSearchPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt</NMakeIncludeSearchPath>
+		<NMakePreprocessorDefinitions>_WINDOWS_H_PATH_=C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um;WIN32;_CRT_SECURE_NO_WARNINGS;TARGET_WINDOWS;BIGARRAY_MULTIPLIER=1;__PIN__=1;PIN_CRT=1;_HAS_EXCEPTIONS=0;__LP64__;TARGET_IA32E;HOST_IA32E;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+		<IncludePath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt</IncludePath>
+		<ExecutablePath>$(ExecutablePath)</ExecutablePath>
+		<NMakeOutput>D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_debug\core\CoveredEdge\cedge64.dll</NMakeOutput>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='win_release|x64'">
+		<NMakeBuildCommandLine>cd /d &quot;D:\work\program\protocol-fuzzer-ce-main&quot; &amp; &quot;C:\Python27\python.exe&quot; waf build --execsolution=D:\work\program\protocol-fuzzer-ce-main\Peach.sln --targets=cedge64 --variant=win_x64_release</NMakeBuildCommandLine>
+		<NMakeReBuildCommandLine>cd /d &quot;D:\work\program\protocol-fuzzer-ce-main&quot; &amp; &quot;C:\Python27\python.exe&quot; waf clean build --execsolution=D:\work\program\protocol-fuzzer-ce-main\Peach.sln --targets=cedge64 --variant=win_x64_release</NMakeReBuildCommandLine>
+		<NMakeCleanCommandLine>cd /d &quot;D:\work\program\protocol-fuzzer-ce-main&quot; &amp; &quot;C:\Python27\python.exe&quot; waf clean --execsolution=D:\work\program\protocol-fuzzer-ce-main\Peach.sln --targets=cedge64 --variant=win_x64_release</NMakeCleanCommandLine>
+		<NMakeIncludeSearchPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt</NMakeIncludeSearchPath>
+		<NMakePreprocessorDefinitions>_WINDOWS_H_PATH_=C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um;WIN32;_CRT_SECURE_NO_WARNINGS;TARGET_WINDOWS;BIGARRAY_MULTIPLIER=1;__PIN__=1;PIN_CRT=1;_HAS_EXCEPTIONS=0;__LP64__;TARGET_IA32E;HOST_IA32E;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+		<IncludePath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt</IncludePath>
+		<ExecutablePath>$(ExecutablePath)</ExecutablePath>
+		<NMakeOutput>D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_release\core\CoveredEdge\cedge64.dll</NMakeOutput>
+	</PropertyGroup>
+	<ItemGroup>
+		<ClCompile Include='D:\work\program\protocol-fuzzer-ce-main\core\CoveredEdge\cedge.cpp' />
+		<ClInclude Include='D:\work\program\protocol-fuzzer-ce-main\core\CoveredEdge\wscript_build' />
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ImportGroup Label="ExtensionTargets">
+	</ImportGroup>
+</Project>

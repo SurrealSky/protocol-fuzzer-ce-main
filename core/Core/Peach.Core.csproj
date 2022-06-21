@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">win_debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B085A5AB-EC0F-4268-9C58-7D6FB5482841}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <BaseIntermediateOutputPath>..\..\.depproj\Peach\obj\</BaseIntermediateOutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Peach.Core</RootNamespace>
+    <AssemblyName>Peach.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_debug_x64</OutputPath>
+    <DefineConstants>PEACH;DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_debug_x64\Peach.Core.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_debug_x86</OutputPath>
+    <DefineConstants>PEACH;DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_debug_x86\Peach.Core.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_release_x64</OutputPath>
+    <DefineConstants>PEACH;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_release_x64\Peach.Core.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_release_x86</OutputPath>
+    <DefineConstants>PEACH;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_release_x86\Peach.Core.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronPython">
+      <HintPath>..\..\3rdParty\IronPython.2.7.5\lib\Net40\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Scripting">
+      <HintPath>..\..\3rdParty\IronPython.2.7.5\lib\Net40\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml" />
+    <Reference Include="NLog">
+      <HintPath>..\..\paket\packages\NLog\lib\net45\NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionException.cs" />
+    <Compile Include="Agent\AgentClient.cs" />
+    <Compile Include="Agent\AgentManager.cs" />
+    <Compile Include="Agent\AgentServer.cs" />
+    <Compile Include="Agent\Channels\AgentLocal.cs" />
+    <Compile Include="Agent\IAgent.cs" />
+    <Compile Include="Agent\IMonitor.cs" />
+    <Compile Include="Agent\IPublisher.cs" />
+    <Compile Include="Agent\IStartStopRestart.cs" />
+    <Compile Include="Agent\IterationStartingArgs.cs" />
+    <Compile Include="Agent\Monitor.cs" />
+    <Compile Include="Agent\Monitor2.cs" />
+    <Compile Include="Agent\MonitorAttribute.cs" />
+    <Compile Include="Agent\MonitorData.cs" />
+    <Compile Include="Agent\RemotePublisher.cs" />
+    <Compile Include="Agent\StartStopRestartMonitor.cs" />
+    <Compile Include="Analysis\Coverage.cs" />
+    <Compile Include="Analysis\Minset.cs" />
+    <Compile Include="Analyzer.cs" />
+    <Compile Include="Analyzers\PitParser.cs" />
+    <Compile Include="ClassLoader.cs" />
+    <Compile Include="CommonAttributes.cs" />
+    <Compile Include="Cracker\CrackingFailure.cs" />
+    <Compile Include="Cracker\DataCracker.cs" />
+    <Compile Include="Dom\Action.cs" />
+    <Compile Include="Dom\ActionData.cs" />
+    <Compile Include="Dom\ActionParameter.cs" />
+    <Compile Include="Dom\ActionResult.cs" />
+    <Compile Include="Dom\Actions\Accept.cs" />
+    <Compile Include="Dom\Actions\Call.cs" />
+    <Compile Include="Dom\Actions\ChangeState.cs" />
+    <Compile Include="Dom\Actions\Close.cs" />
+    <Compile Include="Dom\Actions\Connect.cs" />
+    <Compile Include="Dom\Actions\GetProperty.cs" />
+    <Compile Include="Dom\Actions\Input.cs" />
+    <Compile Include="Dom\Actions\Open.cs" />
+    <Compile Include="Dom\Actions\Output.cs" />
+    <Compile Include="Dom\Actions\SetProperty.cs" />
+    <Compile Include="Dom\Actions\Slurp.cs" />
+    <Compile Include="Dom\Actions\Start.cs" />
+    <Compile Include="Dom\Actions\Stop.cs" />
+    <Compile Include="Dom\Agent.cs" />
+    <Compile Include="Dom\Array.cs" />
+    <Compile Include="Dom\Binding.cs" />
+    <Compile Include="Dom\Blob.cs" />
+    <Compile Include="Dom\Block.cs" />
+    <Compile Include="Dom\Choice.cs" />
+    <Compile Include="Dom\CountRelation.cs" />
+    <Compile Include="Dom\Data.cs" />
+    <Compile Include="Dom\DataElement.cs" />
+    <Compile Include="Dom\DataElementContainer.cs" />
+    <Compile Include="Dom\DataModel.cs" />
+    <Compile Include="Dom\DataSet.cs" />
+    <Compile Include="Dom\Dom.cs" />
+    <Compile Include="Dom\DomAttributes.cs" />
+    <Compile Include="Dom\Double.cs" />
+    <Compile Include="Dom\Flag.cs" />
+    <Compile Include="Dom\Flags.cs" />
+    <Compile Include="Dom\Frag.cs" />
+    <Compile Include="Dom\FragSequence.cs" />
+    <Compile Include="Dom\Hint.cs" />
+    <Compile Include="Dom\Monitor.cs" />
+    <Compile Include="Dom\Number.cs" />
+    <Compile Include="Dom\OffsetRelationcs.cs" />
+    <Compile Include="Dom\OrderedDictionary.cs" />
+    <Compile Include="Dom\Padding.cs" />
+    <Compile Include="Dom\Placement.cs" />
+    <Compile Include="Dom\Relation.cs" />
+    <Compile Include="Dom\RelationContainer.cs" />
+    <Compile Include="Dom\Sequence.cs" />
+    <Compile Include="Dom\SizeRelation.cs" />
+    <Compile Include="Dom\State.cs" />
+    <Compile Include="Dom\StateModel.cs" />
+    <Compile Include="Dom\String.cs" />
+    <Compile Include="Dom\Test.cs" />
+    <Compile Include="Dom\XPath\PeachXPathNavigator.cs" />
+    <Compile Include="Dom\XPath\PeachXmlNamespaceResolver.cs" />
+    <Compile Include="Dom\XmlAttribute.cs" />
+    <Compile Include="Dom\XmlCharacterData.cs" />
+    <Compile Include="Dom\XmlElement.cs" />
+    <Compile Include="Encoding.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Fault.cs" />
+    <Compile Include="FileArch.cs" />
+    <Compile Include="Fixup.cs" />
+    <Compile Include="Fixups\VolatileFixup.cs" />
+    <Compile Include="FragmentAlgorithm.cs" />
+    <Compile Include="IFieldNamed.cs" />
+    <Compile Include="INamed.cs" />
+    <Compile Include="IO\BitReader.cs" />
+    <Compile Include="IO\BitStream.cs" />
+    <Compile Include="IO\BitStreamList.cs" />
+    <Compile Include="IO\BitWriter.cs" />
+    <Compile Include="IO\BitwiseStream.cs" />
+    <Compile Include="IO\Endian.cs" />
+    <Compile Include="IO\NonClosingStream.cs" />
+    <Compile Include="IPitSerializable.cs" />
+    <Compile Include="IWeighted.cs" />
+    <Compile Include="LSFR.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MutationStrategy.cs" />
+    <Compile Include="Mutator.cs" />
+    <Compile Include="MutatorAttribute.cs" />
+    <Compile Include="NamedCollection.cs" />
+    <Compile Include="NetworkAdapter.cs" />
+    <Compile Include="ObjectCopier.cs" />
+    <Compile Include="OwnedCollection.cs" />
+    <Compile Include="ParameterParser.cs" />
+    <Compile Include="PeachException.cs" />
+    <Compile Include="PitParsableAttribute.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="Process.cs" />
+    <Compile Include="ProcessInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publisher.cs" />
+    <Compile Include="Publishers\BufferedStreamPublisher.cs" />
+    <Compile Include="Publishers\Can\BaseCanDriver.cs" />
+    <Compile Include="Publishers\Can\ICanDriver.cs" />
+    <Compile Include="Publishers\StreamPublisher.cs" />
+    <Compile Include="Random.cs" />
+    <Compile Include="Retry.cs" />
+    <Compile Include="RunConfig.cs" />
+    <Compile Include="RunContext.cs" />
+    <Compile Include="Runtime\Options.cs" />
+    <Compile Include="Runtime\SyntaxException.cs" />
+    <Compile Include="Scripting.cs" />
+    <Compile Include="TempFile.cs" />
+    <Compile Include="TinyMT32.cs" />
+    <Compile Include="Transformer.cs" />
+    <Compile Include="Usage.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Variant.cs" />
+    <Compile Include="Watcher.cs" />
+    <Compile Include="Xsd\XmlSchemaBuilder.cs" />
+    <Content Include="NLog.config.template">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="wscript_build" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

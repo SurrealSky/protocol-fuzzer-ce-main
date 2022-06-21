@@ -1,0 +1,10 @@
+APPNAME = 'Peach'
+BINDIR = 'output'
+BUILDTAG = '0.0.0'
+DOCDIR = 'output'
+LIBDIR = 'output'
+OUTPUT = 'output'
+PKGDIR = 'output'
+PREFIX = 'output'
+VER_BRANCH = 1
+variants = ['doc', 'win_x86_debug', 'win_x86_release', 'win_x64_debug', 'win_x64_release']

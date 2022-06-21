@@ -1,0 +1,38 @@
+var class_peach_1_1_core_1_1_variant =
+[
+    [ "VariantType", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0a", [
+      [ "Unknown", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0aa88183b946cc5f0e8c96b2e66e1c74a7e", null ],
+      [ "Int", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0aa1686a6c336b71b36d77354cea19a8b52", null ],
+      [ "Long", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0aa8394f0347c184cf156ac5924dccb773b", null ],
+      [ "ULong", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0aa43963b8459ea654be36f373f1a036182", null ],
+      [ "String", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0aa27118326006d3829667a400ad23d5d98", null ],
+      [ "ByteString", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0aa58efa9e8b8491c4a42cbf3bead1b06b6", null ],
+      [ "BitStream", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0aa5dc103beacde60bf077ca56ed093d6a4", null ],
+      [ "Boolean", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0aa27226c864bac7454a8504f8edb15d95b", null ],
+      [ "Double", "class_peach_1_1_core_1_1_variant.html#a8a9903d9a43bf54aa28daded3f87da0aad909d38d705ce75386dd86e611a82f5b", null ]
+    ] ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#a333f7f5be6e4bc0e979ab9321e31d26d", null ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#a1932137fa3fd4142ce5993a5d48aad41", null ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#a06c0a835f07dfe405d1a4f07d6ad62be", null ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#a7963250278534383b94d55c03d03c83c", null ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#abc3d7f3d321db9156e258ade92d0164d", null ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#a34ef9c5c7d5b5abf6666269f2ae67901", null ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#af3b21014d9868669e08601a038606865", null ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#a94fb662153f1356dadffcbdc10119954", null ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#a75e3ece0842565bde8475be576ac36dd", null ],
+    [ "Variant", "class_peach_1_1_core_1_1_variant.html#a886221ab77b1d340b1907e9077c3a907", null ],
+    [ "Equals", "class_peach_1_1_core_1_1_variant.html#a63895cd18d532a2a92f8780b03656567", null ],
+    [ "GetHashCode", "class_peach_1_1_core_1_1_variant.html#aa9c0d069127bef5d0883789dd53f06b8", null ],
+    [ "GetSchema", "class_peach_1_1_core_1_1_variant.html#ad099b979096cd941999a5205d19e76dd", null ],
+    [ "GetVariantType", "class_peach_1_1_core_1_1_variant.html#af701189bbd11324ad25f680fdef342e7", null ],
+    [ "ReadXml", "class_peach_1_1_core_1_1_variant.html#a54bf69ab2a4895c4cafa9dcf3867c165", null ],
+    [ "SetValue", "class_peach_1_1_core_1_1_variant.html#a8cb2d2fc1d1a09e59962b351367059d4", null ],
+    [ "SetValue", "class_peach_1_1_core_1_1_variant.html#a31ab2477c02209af12b647e0f22c309b", null ],
+    [ "SetValue", "class_peach_1_1_core_1_1_variant.html#a8ec2b9ce72b1d98577142f8d279c5c28", null ],
+    [ "SetValue", "class_peach_1_1_core_1_1_variant.html#a26acb8f29db246d649198ea4db00b4c1", null ],
+    [ "SetValue", "class_peach_1_1_core_1_1_variant.html#af9da1af6bd87d7a13b25eed97f5e7de9", null ],
+    [ "SetValue", "class_peach_1_1_core_1_1_variant.html#ae1320b1b312d92485cd32b21b65150a8", null ],
+    [ "SetValue", "class_peach_1_1_core_1_1_variant.html#aa151f5d95fe744eb6a3673e21c7277d5", null ],
+    [ "ToString", "class_peach_1_1_core_1_1_variant.html#a15ffae99ee17a75135f3041cc5a8adc6", null ],
+    [ "WriteXml", "class_peach_1_1_core_1_1_variant.html#a85f7476d4d9e757766e93e15e8fc5569", null ]
+];

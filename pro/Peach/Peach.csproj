@@ -1,0 +1,2404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">win_debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8685E97-27C8-4DE6-AF04-F2497DCF3180}</ProjectGuid>
+    <OutputType>exe</OutputType>
+    <BaseIntermediateOutputPath>..\..\.depproj\Peach\obj\</BaseIntermediateOutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Peach</RootNamespace>
+    <AssemblyName>Peach</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_debug_x64</OutputPath>
+    <DefineConstants>PEACH;DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_debug_x64\Peach.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command=" PitTool.exe makexsd" workingdir="${TargetDir}" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_debug_x86</OutputPath>
+    <DefineConstants>PEACH;DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_debug_x86\Peach.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command=" PitTool.exe makexsd" workingdir="${TargetDir}" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_release_x64</OutputPath>
+    <DefineConstants>PEACH;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_release_x64\Peach.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command=" PitTool.exe makexsd" workingdir="${TargetDir}" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\.depproj\Peach\bin\win_release_x86</OutputPath>
+    <DefineConstants>PEACH;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_release_x86\Peach.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command=" PitTool.exe makexsd" workingdir="${TargetDir}" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Core\Peach.Core.csproj">
+      <Project>{B085A5AB-EC0F-4268-9C58-7D6FB5482841}</Project>
+      <Name>Peach.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Peach.Pro.csproj">
+      <Project>{F95A10D1-B775-4D20-BB03-58F061053EBD}</Project>
+      <Name>Peach.Pro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApi2\Peach.Pro.WebApi2.csproj">
+      <Project>{6E592B44-D695-4B0C-ABA1-4EBF0D97E292}</Project>
+      <Name>Peach.Pro.WebApi2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PeachMain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="samples\AndroidEmulator.xml" />
+    <Content Include="samples\CrashableServer.xml" />
+    <Content Include="samples\CrashingFileConsumer.xml" />
+    <Content Include="samples\DebuggerCrashReporter.xml" />
+    <Content Include="samples\DebuggerCrashWrangler.xml" />
+    <Content Include="samples\DebuggerLinux.xml" />
+    <Content Include="samples\DebuggerLinuxCrashMonitor.xml" />
+    <Content Include="samples\DebuggerWindows.xml" />
+    <Content Include="samples\DebuggerWindowsKernel.xml" />
+    <Content Include="samples\Droid.xml" />
+    <Content Include="samples\DroidNet.xml" />
+    <Content Include="samples\ExampleDefinitionsFile.xml" />
+    <Content Include="samples\FileFuzzer.xml" />
+    <Content Include="samples\FileFuzzerGui.xml" />
+    <Content Include="samples\FilePerIteration.xml" />
+    <Content Include="samples\HelloWorld.xml" />
+    <Content Include="samples\Network.xml" />
+    <Content Include="samples\RelationCount.xml" />
+    <Content Include="samples\RelationSize.xml" />
+    <Content Include="samples\RemoteInclude.xml" />
+    <Content Include="samples\RemotePublisher.xml" />
+    <Content Include="samples\ScriptFixup.xml" />
+    <Content Include="samples\Server-Example.xml" />
+    <Content Include="samples\StringTokenAnalyzer.xml" />
+    <Content Include="samples\XmlAnalyzer.xml" />
+    <Content Include="samples\com.xml" />
+    <Content Include="samples\fixup.py" />
+    <Content Include="samples\peach_ws_client.html" />
+    <Content Include="samples\peach_ws_client.js" />
+    <Content Include="samples\peach_ws_template.html" />
+    <Content Include="samples\samples_png\PngSuite.png" />
+    <Content Include="samples\samples_png\ajou_logo.png" />
+    <Content Include="samples\samples_png\apollonian_gasket.png" />
+    <Content Include="samples\samples_png\aquarium.png" />
+    <Content Include="samples\samples_png\baboon.png" />
+    <Content Include="samples\samples_png\basi0g01.png" />
+    <Content Include="samples\samples_png\basi0g02.png" />
+    <Content Include="samples\samples_png\basi0g04.png" />
+    <Content Include="samples\samples_png\basi0g08.png" />
+    <Content Include="samples\samples_png\basi0g16.png" />
+    <Content Include="samples\samples_png\basi2c08.png" />
+    <Content Include="samples\samples_png\basi2c16.png" />
+    <Content Include="samples\samples_png\basi3p01.png" />
+    <Content Include="samples\samples_png\basi3p02.png" />
+    <Content Include="samples\samples_png\basi3p04.png" />
+    <Content Include="samples\samples_png\basi3p08.png" />
+    <Content Include="samples\samples_png\basi4a08.png" />
+    <Content Include="samples\samples_png\basi4a16.png" />
+    <Content Include="samples\samples_png\basi6a08.png" />
+    <Content Include="samples\samples_png\basi6a16.png" />
+    <Content Include="samples\samples_png\basn0g01.png" />
+    <Content Include="samples\samples_png\basn0g02.png" />
+    <Content Include="samples\samples_png\basn0g04.png" />
+    <Content Include="samples\samples_png\basn0g08.png" />
+    <Content Include="samples\samples_png\basn0g16.png" />
+    <Content Include="samples\samples_png\basn2c08.png" />
+    <Content Include="samples\samples_png\basn2c16.png" />
+    <Content Include="samples\samples_png\basn3p01.png" />
+    <Content Include="samples\samples_png\basn3p02.png" />
+    <Content Include="samples\samples_png\basn3p04.png" />
+    <Content Include="samples\samples_png\basn3p08.png" />
+    <Content Include="samples\samples_png\basn4a08.png" />
+    <Content Include="samples\samples_png\basn4a16.png" />
+    <Content Include="samples\samples_png\basn6a08.png" />
+    <Content Include="samples\samples_png\basn6a16.png" />
+    <Content Include="samples\samples_png\bell_206.png" />
+    <Content Include="samples\samples_png\bell_v22.png" />
+    <Content Include="samples\samples_png\bgai4a08.png" />
+    <Content Include="samples\samples_png\bgai4a16.png" />
+    <Content Include="samples\samples_png\bgan6a08.png" />
+    <Content Include="samples\samples_png\bgan6a16.png" />
+    <Content Include="samples\samples_png\bgbn4a08.png" />
+    <Content Include="samples\samples_png\bggn4a16.png" />
+    <Content Include="samples\samples_png\bgwn6a08.png" />
+    <Content Include="samples\samples_png\bgyn6a16.png" />
+    <Content Include="samples\samples_png\bigpnglogo.png" />
+    <Content Include="samples\samples_png\blackbuck.png" />
+    <Content Include="samples\samples_png\bmp_08.png" />
+    <Content Include="samples\samples_png\bmp_24.png" />
+    <Content Include="samples\samples_png\ccwn2c08.png" />
+    <Content Include="samples\samples_png\ccwn3p08.png" />
+    <Content Include="samples\samples_png\cdfn2c08.png" />
+    <Content Include="samples\samples_png\cdhn2c08.png" />
+    <Content Include="samples\samples_png\cdsn2c08.png" />
+    <Content Include="samples\samples_png\cdun2c08.png" />
+    <Content Include="samples\samples_png\ch1n3p04.png" />
+    <Content Include="samples\samples_png\ch2n3p08.png" />
+    <Content Include="samples\samples_png\cm0n0g04.png" />
+    <Content Include="samples\samples_png\cm7n0g04.png" />
+    <Content Include="samples\samples_png\cm9n0g04.png" />
+    <Content Include="samples\samples_png\cs3n2c16.png" />
+    <Content Include="samples\samples_png\cs3n3p08.png" />
+    <Content Include="samples\samples_png\cs5n2c08.png" />
+    <Content Include="samples\samples_png\cs5n3p08.png" />
+    <Content Include="samples\samples_png\cs8n2c08.png" />
+    <Content Include="samples\samples_png\cs8n3p08.png" />
+    <Content Include="samples\samples_png\ct0n0g04.png" />
+    <Content Include="samples\samples_png\ct1n0g04.png" />
+    <Content Include="samples\samples_png\cten0g04.png" />
+    <Content Include="samples\samples_png\ctfn0g04.png" />
+    <Content Include="samples\samples_png\ctgn0g04.png" />
+    <Content Include="samples\samples_png\cthn0g04.png" />
+    <Content Include="samples\samples_png\ctjn0g04.png" />
+    <Content Include="samples\samples_png\ctzn0g04.png" />
+    <Content Include="samples\samples_png\f00n0g08.png" />
+    <Content Include="samples\samples_png\f00n2c08.png" />
+    <Content Include="samples\samples_png\f01n0g08.png" />
+    <Content Include="samples\samples_png\f01n2c08.png" />
+    <Content Include="samples\samples_png\f02n0g08.png" />
+    <Content Include="samples\samples_png\f02n2c08.png" />
+    <Content Include="samples\samples_png\f03n0g08.png" />
+    <Content Include="samples\samples_png\f03n2c08.png" />
+    <Content Include="samples\samples_png\f04n0g08.png" />
+    <Content Include="samples\samples_png\f04n2c08.png" />
+    <Content Include="samples\samples_png\f99n0g04.png" />
+    <Content Include="samples\samples_png\g03n0g16.png" />
+    <Content Include="samples\samples_png\g03n2c08.png" />
+    <Content Include="samples\samples_png\g03n3p04.png" />
+    <Content Include="samples\samples_png\g04n0g16.png" />
+    <Content Include="samples\samples_png\g04n2c08.png" />
+    <Content Include="samples\samples_png\g04n3p04.png" />
+    <Content Include="samples\samples_png\g05n0g16.png" />
+    <Content Include="samples\samples_png\g05n2c08.png" />
+    <Content Include="samples\samples_png\g05n3p04.png" />
+    <Content Include="samples\samples_png\g07n0g16.png" />
+    <Content Include="samples\samples_png\g07n2c08.png" />
+    <Content Include="samples\samples_png\g07n3p04.png" />
+    <Content Include="samples\samples_png\g10n0g16.png" />
+    <Content Include="samples\samples_png\g10n2c08.png" />
+    <Content Include="samples\samples_png\g10n3p04.png" />
+    <Content Include="samples\samples_png\g25n0g16.png" />
+    <Content Include="samples\samples_png\g25n2c08.png" />
+    <Content Include="samples\samples_png\g25n3p04.png" />
+    <Content Include="samples\samples_png\humanoid_tri.png" />
+    <Content Include="samples\samples_png\move1.png" />
+    <Content Include="samples\samples_png\oi1n0g16.png" />
+    <Content Include="samples\samples_png\oi1n2c16.png" />
+    <Content Include="samples\samples_png\oi2n0g16.png" />
+    <Content Include="samples\samples_png\oi2n2c16.png" />
+    <Content Include="samples\samples_png\oi4n0g16.png" />
+    <Content Include="samples\samples_png\oi4n2c16.png" />
+    <Content Include="samples\samples_png\oi9n0g16.png" />
+    <Content Include="samples\samples_png\oi9n2c16.png" />
+    <Content Include="samples\samples_png\pengbrew.png" />
+    <Content Include="samples\samples_png\pnglogo.png" />
+    <Content Include="samples\samples_png\pp0n2c16.png" />
+    <Content Include="samples\samples_png\pp0n6a08.png" />
+    <Content Include="samples\samples_png\ps1n0g08.png" />
+    <Content Include="samples\samples_png\ps1n2c16.png" />
+    <Content Include="samples\samples_png\ps2n0g08.png" />
+    <Content Include="samples\samples_png\ps2n2c16.png" />
+    <Content Include="samples\samples_png\s01i3p01.png" />
+    <Content Include="samples\samples_png\s01n3p01.png" />
+    <Content Include="samples\samples_png\s02i3p01.png" />
+    <Content Include="samples\samples_png\s02n3p01.png" />
+    <Content Include="samples\samples_png\s03i3p01.png" />
+    <Content Include="samples\samples_png\s03n3p01.png" />
+    <Content Include="samples\samples_png\s04i3p01.png" />
+    <Content Include="samples\samples_png\s04n3p01.png" />
+    <Content Include="samples\samples_png\s05i3p02.png" />
+    <Content Include="samples\samples_png\s05n3p02.png" />
+    <Content Include="samples\samples_png\s06i3p02.png" />
+    <Content Include="samples\samples_png\s06n3p02.png" />
+    <Content Include="samples\samples_png\s07i3p02.png" />
+    <Content Include="samples\samples_png\s07n3p02.png" />
+    <Content Include="samples\samples_png\s08i3p02.png" />
+    <Content Include="samples\samples_png\s08n3p02.png" />
+    <Content Include="samples\samples_png\s09i3p02.png" />
+    <Content Include="samples\samples_png\s09n3p02.png" />
+    <Content Include="samples\samples_png\s32i3p04.png" />
+    <Content Include="samples\samples_png\s32n3p04.png" />
+    <Content Include="samples\samples_png\s33i3p04.png" />
+    <Content Include="samples\samples_png\s33n3p04.png" />
+    <Content Include="samples\samples_png\s34i3p04.png" />
+    <Content Include="samples\samples_png\s34n3p04.png" />
+    <Content Include="samples\samples_png\s35i3p04.png" />
+    <Content Include="samples\samples_png\s35n3p04.png" />
+    <Content Include="samples\samples_png\s36i3p04.png" />
+    <Content Include="samples\samples_png\s36n3p04.png" />
+    <Content Include="samples\samples_png\s37i3p04.png" />
+    <Content Include="samples\samples_png\s37n3p04.png" />
+    <Content Include="samples\samples_png\s38i3p04.png" />
+    <Content Include="samples\samples_png\s38n3p04.png" />
+    <Content Include="samples\samples_png\s39i3p04.png" />
+    <Content Include="samples\samples_png\s39n3p04.png" />
+    <Content Include="samples\samples_png\s40i3p04.png" />
+    <Content Include="samples\samples_png\s40n3p04.png" />
+    <Content Include="samples\samples_png\sines.png" />
+    <Content Include="samples\samples_png\snail.png" />
+    <Content Include="samples\samples_png\tbbn0g04.png" />
+    <Content Include="samples\samples_png\tbbn2c16.png" />
+    <Content Include="samples\samples_png\tbbn3p08.png" />
+    <Content Include="samples\samples_png\tbgn2c16.png" />
+    <Content Include="samples\samples_png\tbgn3p08.png" />
+    <Content Include="samples\samples_png\tbrn2c08.png" />
+    <Content Include="samples\samples_png\tbwn0g16.png" />
+    <Content Include="samples\samples_png\tbwn3p08.png" />
+    <Content Include="samples\samples_png\tbyn3p08.png" />
+    <Content Include="samples\samples_png\tp0n0g08.png" />
+    <Content Include="samples\samples_png\tp0n2c08.png" />
+    <Content Include="samples\samples_png\tp0n3p08.png" />
+    <Content Include="samples\samples_png\tp1n3p08.png" />
+    <Content Include="samples\samples_png\tutte.png" />
+    <Content Include="samples\samples_png\usa_graph.png" />
+    <Content Include="samples\samples_png\voronoi_sphere2.png" />
+    <Content Include="samples\samples_png\vt_logo.png" />
+    <Content Include="samples\samples_png\white_box.png" />
+    <Content Include="samples\samples_png\xc1n0g08.png" />
+    <Content Include="samples\samples_png\xc9n2c08.png" />
+    <Content Include="samples\samples_png\xcrn0g04.png" />
+    <Content Include="samples\samples_png\xcsn0g01.png" />
+    <Content Include="samples\samples_png\xd0n2c08.png" />
+    <Content Include="samples\samples_png\xd3n2c08.png" />
+    <Content Include="samples\samples_png\xd9n2c08.png" />
+    <Content Include="samples\samples_png\xdtn0g01.png" />
+    <Content Include="samples\samples_png\xhdn0g08.png" />
+    <Content Include="samples\samples_png\xlfn0g04.png" />
+    <Content Include="samples\samples_png\xs1n0g01.png" />
+    <Content Include="samples\samples_png\xs2n0g01.png" />
+    <Content Include="samples\samples_png\xs4n0g01.png" />
+    <Content Include="samples\samples_png\xs7n0g01.png" />
+    <Content Include="samples\samples_png\z00n2c08.png" />
+    <Content Include="samples\samples_png\z03n2c08.png" />
+    <Content Include="samples\samples_png\z06n2c08.png" />
+    <Content Include="samples\samples_png\z09n2c08.png" />
+    <Content Include="samples\websocket.xml" />
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\BaseHTTPServer.py">
+      <Link>Lib\BaseHTTPServer.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\Bastion.py">
+      <Link>Lib\Bastion.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\CGIHTTPServer.py">
+      <Link>Lib\CGIHTTPServer.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ConfigParser.py">
+      <Link>Lib\ConfigParser.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\Cookie.py">
+      <Link>Lib\Cookie.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\DocXMLRPCServer.py">
+      <Link>Lib\DocXMLRPCServer.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\HTMLParser.py">
+      <Link>Lib\HTMLParser.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\MimeWriter.py">
+      <Link>Lib\MimeWriter.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\Queue.py">
+      <Link>Lib\Queue.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\SimpleHTTPServer.py">
+      <Link>Lib\SimpleHTTPServer.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\SimpleXMLRPCServer.py">
+      <Link>Lib\SimpleXMLRPCServer.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\SocketServer.py">
+      <Link>Lib\SocketServer.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\StringIO.py">
+      <Link>Lib\StringIO.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\UserDict.py">
+      <Link>Lib\UserDict.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\UserList.py">
+      <Link>Lib\UserList.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\UserString.py">
+      <Link>Lib\UserString.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\_LWPCookieJar.py">
+      <Link>Lib\_LWPCookieJar.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\_MozillaCookieJar.py">
+      <Link>Lib\_MozillaCookieJar.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\__future__.py">
+      <Link>Lib\__future__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\__phello__.foo.py">
+      <Link>Lib\__phello__.foo.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\_abcoll.py">
+      <Link>Lib\_abcoll.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\_pyio.py">
+      <Link>Lib\_pyio.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\_strptime.py">
+      <Link>Lib\_strptime.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\_threading_local.py">
+      <Link>Lib\_threading_local.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\_weakrefset.py">
+      <Link>Lib\_weakrefset.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\abc.py">
+      <Link>Lib\abc.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\aifc.py">
+      <Link>Lib\aifc.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\antigravity.py">
+      <Link>Lib\antigravity.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\anydbm.py">
+      <Link>Lib\anydbm.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\argparse.py">
+      <Link>Lib\argparse.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ast.py">
+      <Link>Lib\ast.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\asynchat.py">
+      <Link>Lib\asynchat.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\asyncore.py">
+      <Link>Lib\asyncore.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\atexit.py">
+      <Link>Lib\atexit.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\audiodev.py">
+      <Link>Lib\audiodev.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\base64.py">
+      <Link>Lib\base64.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\bdb.py">
+      <Link>Lib\bdb.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\binhex.py">
+      <Link>Lib\binhex.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\bisect.py">
+      <Link>Lib\bisect.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\calendar.py">
+      <Link>Lib\calendar.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\cgi.py">
+      <Link>Lib\cgi.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\cgitb.py">
+      <Link>Lib\cgitb.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\chunk.py">
+      <Link>Lib\chunk.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\cmd.py">
+      <Link>Lib\cmd.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\code.py">
+      <Link>Lib\code.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\codecs.py">
+      <Link>Lib\codecs.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\codeop.py">
+      <Link>Lib\codeop.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\collections.py">
+      <Link>Lib\collections.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\colorsys.py">
+      <Link>Lib\colorsys.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\commands.py">
+      <Link>Lib\commands.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\compileall.py">
+      <Link>Lib\compileall.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\contextlib.py">
+      <Link>Lib\contextlib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\cookielib.py">
+      <Link>Lib\cookielib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\copy.py">
+      <Link>Lib\copy.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\csv.py">
+      <Link>Lib\csv.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ctypes\__init__.py">
+      <Link>Lib\ctypes\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ctypes\_endian.py">
+      <Link>Lib\ctypes\_endian.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ctypes\macholib\__init__.py">
+      <Link>Lib\ctypes\macholib\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ctypes\macholib\dyld.py">
+      <Link>Lib\ctypes\macholib\dyld.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ctypes\macholib\dylib.py">
+      <Link>Lib\ctypes\macholib\dylib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ctypes\macholib\framework.py">
+      <Link>Lib\ctypes\macholib\framework.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ctypes\util.py">
+      <Link>Lib\ctypes\util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ctypes\wintypes.py">
+      <Link>Lib\ctypes\wintypes.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\decimal.py">
+      <Link>Lib\decimal.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\difflib.py">
+      <Link>Lib\difflib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\dircache.py">
+      <Link>Lib\dircache.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\dis.py">
+      <Link>Lib\dis.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\__init__.py">
+      <Link>Lib\distutils\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\archive_util.py">
+      <Link>Lib\distutils\archive_util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\bcppcompiler.py">
+      <Link>Lib\distutils\bcppcompiler.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\ccompiler.py">
+      <Link>Lib\distutils\ccompiler.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\cmd.py">
+      <Link>Lib\distutils\cmd.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\__init__.py">
+      <Link>Lib\distutils\command\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\bdist.py">
+      <Link>Lib\distutils\command\bdist.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\bdist_dumb.py">
+      <Link>Lib\distutils\command\bdist_dumb.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\bdist_rpm.py">
+      <Link>Lib\distutils\command\bdist_rpm.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\bdist_wininst.py">
+      <Link>Lib\distutils\command\bdist_wininst.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\build.py">
+      <Link>Lib\distutils\command\build.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\build_clib.py">
+      <Link>Lib\distutils\command\build_clib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\build_ext.py">
+      <Link>Lib\distutils\command\build_ext.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\build_py.py">
+      <Link>Lib\distutils\command\build_py.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\build_scripts.py">
+      <Link>Lib\distutils\command\build_scripts.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\check.py">
+      <Link>Lib\distutils\command\check.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\clean.py">
+      <Link>Lib\distutils\command\clean.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\config.py">
+      <Link>Lib\distutils\command\config.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\install.py">
+      <Link>Lib\distutils\command\install.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\install_data.py">
+      <Link>Lib\distutils\command\install_data.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\install_egg_info.py">
+      <Link>Lib\distutils\command\install_egg_info.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\install_headers.py">
+      <Link>Lib\distutils\command\install_headers.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\install_lib.py">
+      <Link>Lib\distutils\command\install_lib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\install_scripts.py">
+      <Link>Lib\distutils\command\install_scripts.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\register.py">
+      <Link>Lib\distutils\command\register.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\sdist.py">
+      <Link>Lib\distutils\command\sdist.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\command\upload.py">
+      <Link>Lib\distutils\command\upload.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\config.py">
+      <Link>Lib\distutils\config.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\core.py">
+      <Link>Lib\distutils\core.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\cygwinccompiler.py">
+      <Link>Lib\distutils\cygwinccompiler.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\debug.py">
+      <Link>Lib\distutils\debug.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\dep_util.py">
+      <Link>Lib\distutils\dep_util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\dir_util.py">
+      <Link>Lib\distutils\dir_util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\dist.py">
+      <Link>Lib\distutils\dist.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\emxccompiler.py">
+      <Link>Lib\distutils\emxccompiler.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\errors.py">
+      <Link>Lib\distutils\errors.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\extension.py">
+      <Link>Lib\distutils\extension.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\fancy_getopt.py">
+      <Link>Lib\distutils\fancy_getopt.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\file_util.py">
+      <Link>Lib\distutils\file_util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\filelist.py">
+      <Link>Lib\distutils\filelist.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\log.py">
+      <Link>Lib\distutils\log.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\msvccompiler.py">
+      <Link>Lib\distutils\msvccompiler.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\spawn.py">
+      <Link>Lib\distutils\spawn.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\sysconfig.py">
+      <Link>Lib\distutils\sysconfig.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\text_file.py">
+      <Link>Lib\distutils\text_file.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\unixccompiler.py">
+      <Link>Lib\distutils\unixccompiler.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\util.py">
+      <Link>Lib\distutils\util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\version.py">
+      <Link>Lib\distutils\version.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\distutils\versionpredicate.py">
+      <Link>Lib\distutils\versionpredicate.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\doctest.py">
+      <Link>Lib\doctest.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\dumbdbm.py">
+      <Link>Lib\dumbdbm.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\dummy_thread.py">
+      <Link>Lib\dummy_thread.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\dummy_threading.py">
+      <Link>Lib\dummy_threading.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\__init__.py">
+      <Link>Lib\email\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\_parseaddr.py">
+      <Link>Lib\email\_parseaddr.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\base64mime.py">
+      <Link>Lib\email\base64mime.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\charset.py">
+      <Link>Lib\email\charset.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\encoders.py">
+      <Link>Lib\email\encoders.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\errors.py">
+      <Link>Lib\email\errors.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\feedparser.py">
+      <Link>Lib\email\feedparser.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\generator.py">
+      <Link>Lib\email\generator.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\header.py">
+      <Link>Lib\email\header.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\iterators.py">
+      <Link>Lib\email\iterators.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\message.py">
+      <Link>Lib\email\message.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\mime\__init__.py">
+      <Link>Lib\email\mime\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\mime\application.py">
+      <Link>Lib\email\mime\application.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\mime\audio.py">
+      <Link>Lib\email\mime\audio.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\mime\base.py">
+      <Link>Lib\email\mime\base.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\mime\image.py">
+      <Link>Lib\email\mime\image.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\mime\message.py">
+      <Link>Lib\email\mime\message.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\mime\multipart.py">
+      <Link>Lib\email\mime\multipart.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\mime\nonmultipart.py">
+      <Link>Lib\email\mime\nonmultipart.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\mime\text.py">
+      <Link>Lib\email\mime\text.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\parser.py">
+      <Link>Lib\email\parser.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\quoprimime.py">
+      <Link>Lib\email\quoprimime.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\email\utils.py">
+      <Link>Lib\email\utils.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\__init__.py">
+      <Link>Lib\encodings\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\aliases.py">
+      <Link>Lib\encodings\aliases.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\ascii.py">
+      <Link>Lib\encodings\ascii.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\base64_codec.py">
+      <Link>Lib\encodings\base64_codec.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\bz2_codec.py">
+      <Link>Lib\encodings\bz2_codec.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\charmap.py">
+      <Link>Lib\encodings\charmap.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp037.py">
+      <Link>Lib\encodings\cp037.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1006.py">
+      <Link>Lib\encodings\cp1006.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1026.py">
+      <Link>Lib\encodings\cp1026.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1140.py">
+      <Link>Lib\encodings\cp1140.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1250.py">
+      <Link>Lib\encodings\cp1250.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1251.py">
+      <Link>Lib\encodings\cp1251.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1252.py">
+      <Link>Lib\encodings\cp1252.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1253.py">
+      <Link>Lib\encodings\cp1253.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1254.py">
+      <Link>Lib\encodings\cp1254.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1255.py">
+      <Link>Lib\encodings\cp1255.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1256.py">
+      <Link>Lib\encodings\cp1256.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1257.py">
+      <Link>Lib\encodings\cp1257.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp1258.py">
+      <Link>Lib\encodings\cp1258.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp424.py">
+      <Link>Lib\encodings\cp424.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp437.py">
+      <Link>Lib\encodings\cp437.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp500.py">
+      <Link>Lib\encodings\cp500.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp720.py">
+      <Link>Lib\encodings\cp720.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp737.py">
+      <Link>Lib\encodings\cp737.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp775.py">
+      <Link>Lib\encodings\cp775.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp850.py">
+      <Link>Lib\encodings\cp850.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp852.py">
+      <Link>Lib\encodings\cp852.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp855.py">
+      <Link>Lib\encodings\cp855.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp856.py">
+      <Link>Lib\encodings\cp856.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp857.py">
+      <Link>Lib\encodings\cp857.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp858.py">
+      <Link>Lib\encodings\cp858.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp860.py">
+      <Link>Lib\encodings\cp860.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp861.py">
+      <Link>Lib\encodings\cp861.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp862.py">
+      <Link>Lib\encodings\cp862.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp863.py">
+      <Link>Lib\encodings\cp863.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp864.py">
+      <Link>Lib\encodings\cp864.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp865.py">
+      <Link>Lib\encodings\cp865.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp866.py">
+      <Link>Lib\encodings\cp866.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp869.py">
+      <Link>Lib\encodings\cp869.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp874.py">
+      <Link>Lib\encodings\cp874.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\cp875.py">
+      <Link>Lib\encodings\cp875.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\hex_codec.py">
+      <Link>Lib\encodings\hex_codec.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\hp_roman8.py">
+      <Link>Lib\encodings\hp_roman8.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\idna.py">
+      <Link>Lib\encodings\idna.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_1.py">
+      <Link>Lib\encodings\iso8859_1.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_10.py">
+      <Link>Lib\encodings\iso8859_10.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_11.py">
+      <Link>Lib\encodings\iso8859_11.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_13.py">
+      <Link>Lib\encodings\iso8859_13.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_14.py">
+      <Link>Lib\encodings\iso8859_14.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_15.py">
+      <Link>Lib\encodings\iso8859_15.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_16.py">
+      <Link>Lib\encodings\iso8859_16.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_2.py">
+      <Link>Lib\encodings\iso8859_2.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_3.py">
+      <Link>Lib\encodings\iso8859_3.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_4.py">
+      <Link>Lib\encodings\iso8859_4.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_5.py">
+      <Link>Lib\encodings\iso8859_5.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_6.py">
+      <Link>Lib\encodings\iso8859_6.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_7.py">
+      <Link>Lib\encodings\iso8859_7.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_8.py">
+      <Link>Lib\encodings\iso8859_8.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\iso8859_9.py">
+      <Link>Lib\encodings\iso8859_9.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\koi8_r.py">
+      <Link>Lib\encodings\koi8_r.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\koi8_u.py">
+      <Link>Lib\encodings\koi8_u.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\latin_1.py">
+      <Link>Lib\encodings\latin_1.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_arabic.py">
+      <Link>Lib\encodings\mac_arabic.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_centeuro.py">
+      <Link>Lib\encodings\mac_centeuro.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_croatian.py">
+      <Link>Lib\encodings\mac_croatian.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_cyrillic.py">
+      <Link>Lib\encodings\mac_cyrillic.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_farsi.py">
+      <Link>Lib\encodings\mac_farsi.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_greek.py">
+      <Link>Lib\encodings\mac_greek.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_iceland.py">
+      <Link>Lib\encodings\mac_iceland.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_latin2.py">
+      <Link>Lib\encodings\mac_latin2.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_roman.py">
+      <Link>Lib\encodings\mac_roman.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_romanian.py">
+      <Link>Lib\encodings\mac_romanian.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mac_turkish.py">
+      <Link>Lib\encodings\mac_turkish.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\mbcs.py">
+      <Link>Lib\encodings\mbcs.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\palmos.py">
+      <Link>Lib\encodings\palmos.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\ptcp154.py">
+      <Link>Lib\encodings\ptcp154.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\punycode.py">
+      <Link>Lib\encodings\punycode.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\quopri_codec.py">
+      <Link>Lib\encodings\quopri_codec.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\raw_unicode_escape.py">
+      <Link>Lib\encodings\raw_unicode_escape.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\rot_13.py">
+      <Link>Lib\encodings\rot_13.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\string_escape.py">
+      <Link>Lib\encodings\string_escape.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\tis_620.py">
+      <Link>Lib\encodings\tis_620.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\undefined.py">
+      <Link>Lib\encodings\undefined.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\unicode_escape.py">
+      <Link>Lib\encodings\unicode_escape.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\unicode_internal.py">
+      <Link>Lib\encodings\unicode_internal.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\utf_16.py">
+      <Link>Lib\encodings\utf_16.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\utf_16_be.py">
+      <Link>Lib\encodings\utf_16_be.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\utf_16_le.py">
+      <Link>Lib\encodings\utf_16_le.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\utf_32.py">
+      <Link>Lib\encodings\utf_32.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\utf_32_le.py">
+      <Link>Lib\encodings\utf_32_le.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\utf_7.py">
+      <Link>Lib\encodings\utf_7.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\utf_8.py">
+      <Link>Lib\encodings\utf_8.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\utf_8_sig.py">
+      <Link>Lib\encodings\utf_8_sig.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\uu_codec.py">
+      <Link>Lib\encodings\uu_codec.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\encodings\zlib_codec.py">
+      <Link>Lib\encodings\zlib_codec.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ensurepip\__init__.py">
+      <Link>Lib\ensurepip\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ensurepip\__main__.py">
+      <Link>Lib\ensurepip\__main__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ensurepip\_bundled\pip-1.5.6-py2.py3-none-any.whl">
+      <Link>Lib\ensurepip\_bundled\pip-1.5.6-py2.py3-none-any.whl</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ensurepip\_bundled\setuptools-3.6-py2.py3-none-any.whl">
+      <Link>Lib\ensurepip\_bundled\setuptools-3.6-py2.py3-none-any.whl</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ensurepip\_uninstall.py">
+      <Link>Lib\ensurepip\_uninstall.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\filecmp.py">
+      <Link>Lib\filecmp.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\fileinput.py">
+      <Link>Lib\fileinput.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\fnmatch.py">
+      <Link>Lib\fnmatch.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\formatter.py">
+      <Link>Lib\formatter.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\fpformat.py">
+      <Link>Lib\fpformat.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\fractions.py">
+      <Link>Lib\fractions.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ftplib.py">
+      <Link>Lib\ftplib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\functools.py">
+      <Link>Lib\functools.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\genericpath.py">
+      <Link>Lib\genericpath.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\getopt.py">
+      <Link>Lib\getopt.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\getpass.py">
+      <Link>Lib\getpass.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\gettext.py">
+      <Link>Lib\gettext.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\glob.py">
+      <Link>Lib\glob.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\gzip.py">
+      <Link>Lib\gzip.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\hashlib.py">
+      <Link>Lib\hashlib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\heapq.py">
+      <Link>Lib\heapq.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\hmac.py">
+      <Link>Lib\hmac.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\htmlentitydefs.py">
+      <Link>Lib\htmlentitydefs.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\htmllib.py">
+      <Link>Lib\htmllib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\httplib.py">
+      <Link>Lib\httplib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ihooks.py">
+      <Link>Lib\ihooks.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\imaplib.py">
+      <Link>Lib\imaplib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\imghdr.py">
+      <Link>Lib\imghdr.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\importlib\__init__.py">
+      <Link>Lib\importlib\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\imputil.py">
+      <Link>Lib\imputil.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\inspect.py">
+      <Link>Lib\inspect.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\io.py">
+      <Link>Lib\io.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\json\__init__.py">
+      <Link>Lib\json\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\json\decoder.py">
+      <Link>Lib\json\decoder.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\json\encoder.py">
+      <Link>Lib\json\encoder.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\json\scanner.py">
+      <Link>Lib\json\scanner.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\json\tool.py">
+      <Link>Lib\json\tool.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\keyword.py">
+      <Link>Lib\keyword.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\__init__.py">
+      <Link>Lib\lib2to3\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\__main__.py">
+      <Link>Lib\lib2to3\__main__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\btm_matcher.py">
+      <Link>Lib\lib2to3\btm_matcher.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\btm_utils.py">
+      <Link>Lib\lib2to3\btm_utils.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixer_base.py">
+      <Link>Lib\lib2to3\fixer_base.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixer_util.py">
+      <Link>Lib\lib2to3\fixer_util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\__init__.py">
+      <Link>Lib\lib2to3\fixes\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_apply.py">
+      <Link>Lib\lib2to3\fixes\fix_apply.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_basestring.py">
+      <Link>Lib\lib2to3\fixes\fix_basestring.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_buffer.py">
+      <Link>Lib\lib2to3\fixes\fix_buffer.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_callable.py">
+      <Link>Lib\lib2to3\fixes\fix_callable.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_dict.py">
+      <Link>Lib\lib2to3\fixes\fix_dict.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_except.py">
+      <Link>Lib\lib2to3\fixes\fix_except.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_exec.py">
+      <Link>Lib\lib2to3\fixes\fix_exec.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_execfile.py">
+      <Link>Lib\lib2to3\fixes\fix_execfile.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_exitfunc.py">
+      <Link>Lib\lib2to3\fixes\fix_exitfunc.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_filter.py">
+      <Link>Lib\lib2to3\fixes\fix_filter.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_funcattrs.py">
+      <Link>Lib\lib2to3\fixes\fix_funcattrs.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_future.py">
+      <Link>Lib\lib2to3\fixes\fix_future.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_getcwdu.py">
+      <Link>Lib\lib2to3\fixes\fix_getcwdu.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_has_key.py">
+      <Link>Lib\lib2to3\fixes\fix_has_key.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_idioms.py">
+      <Link>Lib\lib2to3\fixes\fix_idioms.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_import.py">
+      <Link>Lib\lib2to3\fixes\fix_import.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_imports.py">
+      <Link>Lib\lib2to3\fixes\fix_imports.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_imports2.py">
+      <Link>Lib\lib2to3\fixes\fix_imports2.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_input.py">
+      <Link>Lib\lib2to3\fixes\fix_input.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_intern.py">
+      <Link>Lib\lib2to3\fixes\fix_intern.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_isinstance.py">
+      <Link>Lib\lib2to3\fixes\fix_isinstance.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_itertools.py">
+      <Link>Lib\lib2to3\fixes\fix_itertools.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_itertools_imports.py">
+      <Link>Lib\lib2to3\fixes\fix_itertools_imports.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_long.py">
+      <Link>Lib\lib2to3\fixes\fix_long.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_map.py">
+      <Link>Lib\lib2to3\fixes\fix_map.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_metaclass.py">
+      <Link>Lib\lib2to3\fixes\fix_metaclass.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_methodattrs.py">
+      <Link>Lib\lib2to3\fixes\fix_methodattrs.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_ne.py">
+      <Link>Lib\lib2to3\fixes\fix_ne.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_next.py">
+      <Link>Lib\lib2to3\fixes\fix_next.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_nonzero.py">
+      <Link>Lib\lib2to3\fixes\fix_nonzero.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_numliterals.py">
+      <Link>Lib\lib2to3\fixes\fix_numliterals.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_operator.py">
+      <Link>Lib\lib2to3\fixes\fix_operator.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_paren.py">
+      <Link>Lib\lib2to3\fixes\fix_paren.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_print.py">
+      <Link>Lib\lib2to3\fixes\fix_print.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_raise.py">
+      <Link>Lib\lib2to3\fixes\fix_raise.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_raw_input.py">
+      <Link>Lib\lib2to3\fixes\fix_raw_input.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_reduce.py">
+      <Link>Lib\lib2to3\fixes\fix_reduce.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_renames.py">
+      <Link>Lib\lib2to3\fixes\fix_renames.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_repr.py">
+      <Link>Lib\lib2to3\fixes\fix_repr.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_set_literal.py">
+      <Link>Lib\lib2to3\fixes\fix_set_literal.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_standarderror.py">
+      <Link>Lib\lib2to3\fixes\fix_standarderror.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_sys_exc.py">
+      <Link>Lib\lib2to3\fixes\fix_sys_exc.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_throw.py">
+      <Link>Lib\lib2to3\fixes\fix_throw.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_tuple_params.py">
+      <Link>Lib\lib2to3\fixes\fix_tuple_params.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_types.py">
+      <Link>Lib\lib2to3\fixes\fix_types.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_unicode.py">
+      <Link>Lib\lib2to3\fixes\fix_unicode.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_urllib.py">
+      <Link>Lib\lib2to3\fixes\fix_urllib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_ws_comma.py">
+      <Link>Lib\lib2to3\fixes\fix_ws_comma.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_xrange.py">
+      <Link>Lib\lib2to3\fixes\fix_xrange.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_xreadlines.py">
+      <Link>Lib\lib2to3\fixes\fix_xreadlines.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\fixes\fix_zip.py">
+      <Link>Lib\lib2to3\fixes\fix_zip.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\main.py">
+      <Link>Lib\lib2to3\main.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\patcomp.py">
+      <Link>Lib\lib2to3\patcomp.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pgen2\__init__.py">
+      <Link>Lib\lib2to3\pgen2\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pgen2\conv.py">
+      <Link>Lib\lib2to3\pgen2\conv.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pgen2\driver.py">
+      <Link>Lib\lib2to3\pgen2\driver.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pgen2\grammar.py">
+      <Link>Lib\lib2to3\pgen2\grammar.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pgen2\literals.py">
+      <Link>Lib\lib2to3\pgen2\literals.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pgen2\parse.py">
+      <Link>Lib\lib2to3\pgen2\parse.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pgen2\pgen.py">
+      <Link>Lib\lib2to3\pgen2\pgen.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pgen2\token.py">
+      <Link>Lib\lib2to3\pgen2\token.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pgen2\tokenize.py">
+      <Link>Lib\lib2to3\pgen2\tokenize.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pygram.py">
+      <Link>Lib\lib2to3\pygram.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\pytree.py">
+      <Link>Lib\lib2to3\pytree.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\lib2to3\refactor.py">
+      <Link>Lib\lib2to3\refactor.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\linecache.py">
+      <Link>Lib\linecache.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\locale.py">
+      <Link>Lib\locale.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\logging\__init__.py">
+      <Link>Lib\logging\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\logging\config.py">
+      <Link>Lib\logging\config.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\logging\handlers.py">
+      <Link>Lib\logging\handlers.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\macpath.py">
+      <Link>Lib\macpath.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\macurl2path.py">
+      <Link>Lib\macurl2path.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\mailbox.py">
+      <Link>Lib\mailbox.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\mailcap.py">
+      <Link>Lib\mailcap.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\markupbase.py">
+      <Link>Lib\markupbase.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\md5.py">
+      <Link>Lib\md5.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\mhlib.py">
+      <Link>Lib\mhlib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\mimetools.py">
+      <Link>Lib\mimetools.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\mimetypes.py">
+      <Link>Lib\mimetypes.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\mimify.py">
+      <Link>Lib\mimify.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\modulefinder.py">
+      <Link>Lib\modulefinder.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multifile.py">
+      <Link>Lib\multifile.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\__init__.py">
+      <Link>Lib\multiprocessing\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\connection.py">
+      <Link>Lib\multiprocessing\connection.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\dummy\__init__.py">
+      <Link>Lib\multiprocessing\dummy\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\dummy\connection.py">
+      <Link>Lib\multiprocessing\dummy\connection.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\forking.py">
+      <Link>Lib\multiprocessing\forking.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\heap.py">
+      <Link>Lib\multiprocessing\heap.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\managers.py">
+      <Link>Lib\multiprocessing\managers.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\pool.py">
+      <Link>Lib\multiprocessing\pool.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\process.py">
+      <Link>Lib\multiprocessing\process.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\queues.py">
+      <Link>Lib\multiprocessing\queues.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\reduction.py">
+      <Link>Lib\multiprocessing\reduction.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\sharedctypes.py">
+      <Link>Lib\multiprocessing\sharedctypes.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\synchronize.py">
+      <Link>Lib\multiprocessing\synchronize.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\multiprocessing\util.py">
+      <Link>Lib\multiprocessing\util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\mutex.py">
+      <Link>Lib\mutex.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\netrc.py">
+      <Link>Lib\netrc.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\new.py">
+      <Link>Lib\new.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\nntplib.py">
+      <Link>Lib\nntplib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ntpath.py">
+      <Link>Lib\ntpath.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\nturl2path.py">
+      <Link>Lib\nturl2path.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\numbers.py">
+      <Link>Lib\numbers.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\opcode.py">
+      <Link>Lib\opcode.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\optparse.py">
+      <Link>Lib\optparse.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\os.py">
+      <Link>Lib\os.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\os2emxpath.py">
+      <Link>Lib\os2emxpath.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pdb.py">
+      <Link>Lib\pdb.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pickle.py">
+      <Link>Lib\pickle.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pickletools.py">
+      <Link>Lib\pickletools.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pipes.py">
+      <Link>Lib\pipes.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pkgutil.py">
+      <Link>Lib\pkgutil.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\platform.py">
+      <Link>Lib\platform.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\plistlib.py">
+      <Link>Lib\plistlib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\popen2.py">
+      <Link>Lib\popen2.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\poplib.py">
+      <Link>Lib\poplib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\posixfile.py">
+      <Link>Lib\posixfile.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\posixpath.py">
+      <Link>Lib\posixpath.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pprint.py">
+      <Link>Lib\pprint.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\profile.py">
+      <Link>Lib\profile.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pstats.py">
+      <Link>Lib\pstats.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\py_compile.py">
+      <Link>Lib\py_compile.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pyclbr.py">
+      <Link>Lib\pyclbr.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pydoc.py">
+      <Link>Lib\pydoc.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pydoc_data\__init__.py">
+      <Link>Lib\pydoc_data\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\pydoc_data\topics.py">
+      <Link>Lib\pydoc_data\topics.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\quopri.py">
+      <Link>Lib\quopri.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\random.py">
+      <Link>Lib\random.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\repr.py">
+      <Link>Lib\repr.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\rexec.py">
+      <Link>Lib\rexec.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\rfc822.py">
+      <Link>Lib\rfc822.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\rlcompleter.py">
+      <Link>Lib\rlcompleter.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\robotparser.py">
+      <Link>Lib\robotparser.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\runpy.py">
+      <Link>Lib\runpy.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sched.py">
+      <Link>Lib\sched.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sets.py">
+      <Link>Lib\sets.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sgmllib.py">
+      <Link>Lib\sgmllib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sha.py">
+      <Link>Lib\sha.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\shelve.py">
+      <Link>Lib\shelve.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\shlex.py">
+      <Link>Lib\shlex.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\shutil.py">
+      <Link>Lib\shutil.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\site-packages\README.txt">
+      <Link>Lib\site-packages\README.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\site.py">
+      <Link>Lib\site.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\smtpd.py">
+      <Link>Lib\smtpd.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\smtplib.py">
+      <Link>Lib\smtplib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sndhdr.py">
+      <Link>Lib\sndhdr.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sqlite3\__init__.py">
+      <Link>Lib\sqlite3\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sqlite3\dbapi2.py">
+      <Link>Lib\sqlite3\dbapi2.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sqlite3\dump.py">
+      <Link>Lib\sqlite3\dump.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sre_compile.py">
+      <Link>Lib\sre_compile.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sre_constants.py">
+      <Link>Lib\sre_constants.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sre_parse.py">
+      <Link>Lib\sre_parse.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\ssl.py">
+      <Link>Lib\ssl.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\stat.py">
+      <Link>Lib\stat.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\statvfs.py">
+      <Link>Lib\statvfs.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\string.py">
+      <Link>Lib\string.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\stringold.py">
+      <Link>Lib\stringold.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\stringprep.py">
+      <Link>Lib\stringprep.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\struct.py">
+      <Link>Lib\struct.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\subprocess.py">
+      <Link>Lib\subprocess.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sunau.py">
+      <Link>Lib\sunau.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sunaudio.py">
+      <Link>Lib\sunaudio.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\symbol.py">
+      <Link>Lib\symbol.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\sysconfig.py">
+      <Link>Lib\sysconfig.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\tabnanny.py">
+      <Link>Lib\tabnanny.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\tarfile.py">
+      <Link>Lib\tarfile.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\telnetlib.py">
+      <Link>Lib\telnetlib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\tempfile.py">
+      <Link>Lib\tempfile.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\textwrap.py">
+      <Link>Lib\textwrap.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\this.py">
+      <Link>Lib\this.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\threading.py">
+      <Link>Lib\threading.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\timeit.py">
+      <Link>Lib\timeit.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\toaiff.py">
+      <Link>Lib\toaiff.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\token.py">
+      <Link>Lib\token.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\tokenize.py">
+      <Link>Lib\tokenize.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\trace.py">
+      <Link>Lib\trace.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\traceback.py">
+      <Link>Lib\traceback.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\types.py">
+      <Link>Lib\types.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\__init__.py">
+      <Link>Lib\unittest\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\__main__.py">
+      <Link>Lib\unittest\__main__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\case.py">
+      <Link>Lib\unittest\case.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\loader.py">
+      <Link>Lib\unittest\loader.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\main.py">
+      <Link>Lib\unittest\main.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\result.py">
+      <Link>Lib\unittest\result.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\runner.py">
+      <Link>Lib\unittest\runner.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\signals.py">
+      <Link>Lib\unittest\signals.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\suite.py">
+      <Link>Lib\unittest\suite.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\unittest\util.py">
+      <Link>Lib\unittest\util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\urllib.py">
+      <Link>Lib\urllib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\urllib2.py">
+      <Link>Lib\urllib2.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\urlparse.py">
+      <Link>Lib\urlparse.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\user.py">
+      <Link>Lib\user.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\uu.py">
+      <Link>Lib\uu.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\uuid.py">
+      <Link>Lib\uuid.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\warnings.py">
+      <Link>Lib\warnings.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\wave.py">
+      <Link>Lib\wave.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\weakref.py">
+      <Link>Lib\weakref.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\webbrowser.py">
+      <Link>Lib\webbrowser.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\whichdb.py">
+      <Link>Lib\whichdb.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\wsgiref\__init__.py">
+      <Link>Lib\wsgiref\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\wsgiref\handlers.py">
+      <Link>Lib\wsgiref\handlers.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\wsgiref\headers.py">
+      <Link>Lib\wsgiref\headers.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\wsgiref\simple_server.py">
+      <Link>Lib\wsgiref\simple_server.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\wsgiref\util.py">
+      <Link>Lib\wsgiref\util.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\wsgiref\validate.py">
+      <Link>Lib\wsgiref\validate.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xdrlib.py">
+      <Link>Lib\xdrlib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\__init__.py">
+      <Link>Lib\xml\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\dom\NodeFilter.py">
+      <Link>Lib\xml\dom\NodeFilter.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\dom\__init__.py">
+      <Link>Lib\xml\dom\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\dom\domreg.py">
+      <Link>Lib\xml\dom\domreg.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\dom\minicompat.py">
+      <Link>Lib\xml\dom\minicompat.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\dom\minidom.py">
+      <Link>Lib\xml\dom\minidom.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\dom\pulldom.py">
+      <Link>Lib\xml\dom\pulldom.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\dom\xmlbuilder.py">
+      <Link>Lib\xml\dom\xmlbuilder.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\etree\ElementInclude.py">
+      <Link>Lib\xml\etree\ElementInclude.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\etree\ElementPath.py">
+      <Link>Lib\xml\etree\ElementPath.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\etree\ElementTree.py">
+      <Link>Lib\xml\etree\ElementTree.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\etree\SimpleXMLTreeBuilder.py">
+      <Link>Lib\xml\etree\SimpleXMLTreeBuilder.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\etree\__init__.py">
+      <Link>Lib\xml\etree\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\parsers\__init__.py">
+      <Link>Lib\xml\parsers\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\sax\__init__.py">
+      <Link>Lib\xml\sax\__init__.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\sax\_exceptions.py">
+      <Link>Lib\xml\sax\_exceptions.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\sax\handler.py">
+      <Link>Lib\xml\sax\handler.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\sax\saxutils.py">
+      <Link>Lib\xml\sax\saxutils.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xml\sax\xmlreader.py">
+      <Link>Lib\xml\sax\xmlreader.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xmllib.py">
+      <Link>Lib\xmllib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\xmlrpclib.py">
+      <Link>Lib\xmlrpclib.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\3rdParty\IronPython.StdLib.2.7.5\content\Lib\zipfile.py">
+      <Link>Lib\zipfile.py</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Plugins\README">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pits\README.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="wscript_build" />
+    <None Include="app.manifest" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x64' ">cd $(TargetDir) &amp;&amp;  PitTool.exe makexsd</PostBuildEvent>
+    <PostBuildEvent Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x86' ">cd $(TargetDir) &amp;&amp;  PitTool.exe makexsd</PostBuildEvent>
+    <PostBuildEvent Condition=" '$(Configuration)|$(Platform)' == 'win_release|x64' ">cd $(TargetDir) &amp;&amp;  PitTool.exe makexsd</PostBuildEvent>
+    <PostBuildEvent Condition=" '$(Configuration)|$(Platform)' == 'win_release|x86' ">cd $(TargetDir) &amp;&amp;  PitTool.exe makexsd</PostBuildEvent>
+  </PropertyGroup>
+</Project>

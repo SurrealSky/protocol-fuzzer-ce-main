@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+			<ClInclude Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\ClassFactory.h">
+				<Filter>.</Filter>
+			</ClInclude>
+			<ClInclude Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\ComBase.h">
+				<Filter>.</Filter>
+			</ClInclude>
+			<ClInclude Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\ComTest.rc">
+				<Filter>.</Filter>
+			</ClInclude>
+			<ClCompile Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\PeachComTest.cpp">
+				<Filter>.</Filter>
+			</ClCompile>
+			<ClInclude Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\PeachComTest.h">
+				<Filter>.</Filter>
+			</ClInclude>
+			<ClInclude Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\Registrar.h">
+				<Filter>.</Filter>
+			</ClInclude>
+			<ClCompile Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\dllmain.cpp">
+				<Filter>.</Filter>
+			</ClCompile>
+			<ClCompile Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\stdafx.cpp">
+				<Filter>.</Filter>
+			</ClCompile>
+			<ClInclude Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\stdafx.h">
+				<Filter>.</Filter>
+			</ClInclude>
+			<ClInclude Include="D:\work\program\protocol-fuzzer-ce-main\pro\Test\Apps\ComTest\wscript_build">
+				<Filter>.</Filter>
+			</ClInclude>
+			<ClCompile Include="D:\work\program\protocol-fuzzer-ce-main\slag\win_x64_debug\pro\Test\Apps\ComTest\ComTest_i.c">
+				<Filter>(..)\(..)\(..)\(..)\slag\win_x64_debug\pro\Test\Apps\ComTest</Filter>
+			</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+			<Filter Include="(..)\(..)\(..)\(..)\slag\win_x64_debug\pro\Test\Apps\ComTest">
+				<UniqueIdentifier>{3F73580F-29F2-40BB-AC4C-7304B649C788}</UniqueIdentifier>
+			</Filter>
+			<Filter Include="(..)\(..)\(..)\(..)\slag\win_x64_debug\pro\Test\Apps">
+				<UniqueIdentifier>{3651E87F-7DEF-42AE-8BCE-F94AC2EE205C}</UniqueIdentifier>
+			</Filter>
+	</ItemGroup>
+</Project>

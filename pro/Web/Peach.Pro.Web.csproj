@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">win_debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA891DA4-12B3-42AE-90DF-FA6DFADFB3F3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <BaseIntermediateOutputPath>..\..\.depproj\Peach\obj\</BaseIntermediateOutputPath>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Peach.Pro.Web</RootNamespace>
+    <AssemblyName>Peach.Pro.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>PEACH</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_debug_x64\Peach.Pro.Web.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>PEACH</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_debug_x86\Peach.Pro.Web.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>PEACH</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_release_x64\Peach.Pro.Web.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'win_release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>PEACH</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591</NoWarn>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\.depproj\Peach\bin\win_release_x86\Peach.Pro.Web.xml</DocumentationFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="public\ts\app\app.ts" />
+    <TypeScriptCompile Include="public\ts\app\reference.ts" />
+    <TypeScriptCompile Include="public\ts\app\utils.ts" />
+    <TypeScriptCompile Include="public\ts\app\ng.ts" />
+    <TypeScriptCompile Include="public\ts\app\const.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\AddMonitorCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\AlertCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\ConfirmCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\ErrorCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\EulaCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\HomeCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\JobDashboardCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\JobFaultsCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\JobMetricsCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\JobsCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\LibraryCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\LicenseCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\MainCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\MigratePitCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\NewConfigCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\NewVarCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\PitConfigDefinesCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\PitConfigMonitorsCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\PitConfigTuningCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\PitConfigWebProxyCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\PitCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\controllers\PitTestCtrl.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\angular-ui-bootstrap\angular-ui-bootstrap.d.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\angular-ui-router\angular-ui-router.d.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\chartjs\chart.d.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\lodash\lodash.d.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\moment\moment.d.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\pithy\pithy.d.ts" />
+    <TypeScriptCompile Include="public\ts\app\def\reference.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\AgentDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\AutoFocusDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\ComboboxDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\DefinesDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\FaultAssetsDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\FaultFilesDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\FaultsDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\HeadersDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\JobsDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\MonitorDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\ParameterDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\ParameterInputDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\RouteDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\SmartTableDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\TestDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\UniqueDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\UnsavedDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\directives\ValidatorDirective.ts" />
+    <TypeScriptCompile Include="public\ts\app\models\Fault.ts" />
+    <TypeScriptCompile Include="public\ts\app\models\Job.ts" />
+    <TypeScriptCompile Include="public\ts\app\models\Library.ts" />
+    <TypeScriptCompile Include="public\ts\app\models\License.ts" />
+    <TypeScriptCompile Include="public\ts\app\models\Metrics.ts" />
+    <TypeScriptCompile Include="public\ts\app\models\Pit.ts" />
+    <TypeScriptCompile Include="public\ts\app\models\PitTest.ts" />
+    <TypeScriptCompile Include="public\ts\app\services\EulaService.ts" />
+    <TypeScriptCompile Include="public\ts\app\services\JobService.ts" />
+    <TypeScriptCompile Include="public\ts\app\services\PitService.ts" />
+    <TypeScriptCompile Include="public\ts\app\services\TestService.ts" />
+    <Content Include="bower.json" />
+    <Content Include="Gruntfile.coffee" />
+    <Content Include="package.json" />
+    <Content Include="protractor.conf.js" />
+    <Content Include="README.adoc" />
+    <Content Include="tsd-app.json" />
+    <Content Include="tsd-test.json" />
+    <Content Include="tslint.json" />
+    <Content Include="public\ts\test\def\angular-protractor\angular-protractor.d.ts" />
+    <Content Include="public\ts\test\def\jasmine\jasmine.d.ts" />
+    <Content Include="public\ts\test\def\node\node.d.ts" />
+    <Content Include="public\ts\test\def\reference.ts" />
+    <Content Include="public\ts\test\def\selenium-webdriver\selenium-webdriver.d.ts" />
+    <Content Include="public\ts\test\e2e\pages\CfgMonitors.ts" />
+    <Content Include="public\ts\test\e2e\pages\CfgTest.ts" />
+    <Content Include="public\ts\test\e2e\pages\CfgVariables.ts" />
+    <Content Include="public\ts\test\e2e\pages\Dashboard.ts" />
+    <Content Include="public\ts\test\e2e\pages\Faults.ts" />
+    <Content Include="public\ts\test\e2e\pages\Menu.ts" />
+    <Content Include="public\ts\test\e2e\pages\QuickStart.ts" />
+    <Content Include="public\ts\test\e2e\reference.ts" />
+    <Content Include="public\ts\test\e2e\test.ts" />
+    <Content Include="public\ts\test\unit\controllers\ConfigDefinesTests.ts" />
+    <Content Include="public\ts\test\unit\controllers\DashboardTests.ts" />
+    <Content Include="public\ts\test\unit\controllers\MainTests.ts" />
+    <Content Include="public\ts\test\unit\controllers\PitTestTests.ts" />
+    <Content Include="public\ts\test\unit\controllers\WizardTests.ts" />
+    <Content Include="public\ts\test\unit\directives\UniqueDirectiveTests.ts" />
+    <Content Include="public\ts\test\unit\directives\ValidatorDirectiveTests.ts" />
+    <Content Include="public\ts\test\unit\misc\StringTests.ts" />
+    <Content Include="public\ts\test\unit\reference.ts" />
+    <Content Include="public\ts\test\unit\services\PitServiceTests.ts" />
+    <Content Include="public\css\ace-skins.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\css\ace.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\css\app.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\css\asciidoc.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\css\combobox.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\css\fonts.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\agent.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\combobox.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\defines.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\fault\assets.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\fault\files.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\faults.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\headers.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\jobs.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\monitor.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\parameter\combo.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\parameter\input.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\parameter\select.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\parameter\string.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\parameter.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\route.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\directives\test.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\error.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\eula\academic.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\eula\enterprise.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\eula\flex.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\eula\professional.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\eula\trial.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\home.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\dashboard.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\faults\detail.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\faults\summary.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\metrics\bucketTimeline.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\metrics\buckets.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\metrics\dataset.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\metrics\elements.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\metrics\faultTimeline.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\metrics\mutators.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\job\metrics\states.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\jobs.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\library.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\messages.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\modal\AddMonitor.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\modal\Alert.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\modal\Confirm.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\modal\License.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\modal\MigratePit.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\modal\NewConfig.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\modal\NewVar.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\no_sdk\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\pit\advanced\monitoring.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\pit\advanced\test.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\pit\advanced\tuning.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\pit\advanced\variables.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\pit\advanced\webproxy.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\pit\configure.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\html\templates.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\img\peach-happy-sad.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\img\peach-happy-sad.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\img\peachlogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular\angular.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-bootstrap\ui-bootstrap-tpls.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-breadcrumb\angular-breadcrumb.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-chart\angular-chart.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-chart\angular-chart.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-chart\angular-chart.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-loading-bar\loading-bar.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-loading-bar\loading-bar.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-messages\angular-messages.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-mocks\angular-mocks.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-sanitize\angular-sanitize.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-smart-table\smart-table.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-ui-router\angular-ui-router.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-ui-select\select.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-ui-select\select.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\angular-visjs\angular-vis.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\bootstrap\css\bootstrap.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\bootstrap\css\bootstrap.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\bootstrap\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\bootstrap\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\bootstrap\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\bootstrap\js\bootstrap.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\chartjs\Chart.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\fontawesome\css\font-awesome.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\fontawesome\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\fontawesome\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\fontawesome\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\fontawesome\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\fontawesome\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\fontawesome\fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\jquery\jquery.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\lodash\lodash.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\moment\moment.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\ngstorage\ngStorage.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\pithy\pithy.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\acceptDeleteIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\addNodeIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\backIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\connectIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\cross.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\cross2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\deleteIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\downArrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\editIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\leftArrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\minus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\plus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\rightArrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\upArrow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\network\zoomExtends.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\img\timeline\delete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\vis.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="public\lib\vis\vis.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="wscript_build" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65033</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <TypeScriptOutFile>public\js\app\app.js</TypeScriptOutFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
