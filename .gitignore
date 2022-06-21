@@ -396,3 +396,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.lock-waf_win32_build
