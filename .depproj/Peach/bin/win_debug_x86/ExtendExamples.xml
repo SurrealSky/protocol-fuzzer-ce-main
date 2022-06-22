@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExtendExamples</name>
+    </assembly>
+    <members>
+        <member name="T:MyExtensions.FileLogger">
+            <summary>
+            Standard file system logger.
+            </summary>
+        </member>
+        <member name="P:MyExtensions.FileLogger.Path">
+            <summary>
+            The user configured base path for all the logs
+            </summary>
+        </member>
+        <member name="P:MyExtensions.FileLogger.RootDir">
+            <summary>
+            The specific path used to log faults for a given test.
+            </summary>
+        </member>
+    </members>
+</doc>
