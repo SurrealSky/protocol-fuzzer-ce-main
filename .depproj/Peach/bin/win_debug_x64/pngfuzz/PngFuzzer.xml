@@ -36,22 +36,16 @@
 	</StateModel>
 	
 	<Agent name="LocalAgent">
-		<Monitor class="debugger.WindowsDebugEngine">
+		<Monitor class="WindowsDebugger">
 			<!-- <Param name="CommandLine" value="E:\pngcheck-2.3.0-win32\pngcheck.exe fuzzed1.png"/> -->
-			<Param name="CommandLine" value="D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x86\pngfuzz\test01.exe D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x86\pngfuzz\fuzzed1.png"/>
+			<Param name="CommandLine" value="test01.exe fuzzed1.png"/>
 			<Param name="StartOnCall" value="LaunchViwer" />
-			<Param name="Windbgpath" value="C:\Program Files\Debugging Tools for Windows (x64)\"/>
+			<Param name="Windbgpath" value="C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\"/>
+			<Param name="Executable" value="test01.exe"/>
 		</Monitor>
 		 <Monitor class="PageHeap">
 			<Param name="Executable" value="test01.exe"/>
 		</Monitor>
-<!-- 		<Monitor class="WindowsDebugger">
-			<Param name="CommandLine" value="C:\Windows\System32\mspaint.exe fuzzed1.png"/>
-			<Param name="StartOnCall" value="ScoobySnacks" />
-		</Monitor>
- 		<Monitor class="PageHeap">
-			<Param name="Executable" value="mspaint.exe"/>
-		</Monitor> -->
 	</Agent>
 	
 	<Test name="Default">
@@ -60,7 +54,7 @@
 		<Publisher name="file" class="File">
 			<Param name="FileName" value="fuzzed1.png"/>
 		</Publisher>
-		<Publisher name="cmd" class="Console"/>
+		<!-- <Publisher name="cmd" class="Console"/> -->
 		<Strategy class="Random">
 			<Param name="MaxFieldsToMutate" value="15"/>
 			<Param name="SwitchCount" value="100"/>
