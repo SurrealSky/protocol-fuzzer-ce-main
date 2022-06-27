@@ -3,23 +3,48 @@
 	xsi:schemaLocation="http://peachfuzzer.com/2012/Peach ../peach.xsd">
 	
 	<DataModel name="Chunk">
-		<Number name="Length" size="32" signed="false">
+		<Number name="Length" size="32" endian="big" signed="false" mutable="true">
 			<Relation type="size" of="Data"/>
 		</Number>
-		<Block name="TypeAndData">
+		<Block name="TypeData">
 			<String name="Type" length="4"/>
 			<Blob name="Data"/>
 		</Block>
-		<Number name="CRC" size="32">
-			<Fixup class="checksums.Crc32Fixup">
-				<Param name="ref" value="TypeAndData"/>
+		<Number name="CRC" size="32" endian="big" mutable="true">
+			<Fixup class="Crc32Fixup">
+				<Param name="ref" value="TypeData"/>
 			</Fixup>
 		</Number>
 	</DataModel>
-	
+	<DataModel name="Chunk_IHDR" ref="Chunk">
+		<Block name="TypeData">
+			<String name="Type" value="IHDR" length="4" token="true"/>
+			<Block name="Data">
+				<Number name="width" size="32" mutable="true"/>
+				<Number name="height" size="32" mutable="true"/>
+				<Number name="bits" size="8" mutable="false"/>
+				<Number name="color_type" size="8" />
+				<Number name="compression" size="8" />
+				<Number name="filter" size="8" />
+				<Number name="interlace" size="8" />
+			</Block>
+		</Block>
+	</DataModel>
+
+	<DataModel name="Chunk_IEND" ref="Chunk">
+		<Block name="TypeData">
+			<String name="Type" value="IEND" length="4" token="true" />
+			<Blob name="Data" length="0" />
+		</Block>
+	</DataModel>
+
 	<DataModel name="PngTemplate">
-		<Blob name="pngmagic" mutable="false" valueType="hex" value="89 50 4E 47 0D 0A 1A 0A"/>
-		<Block ref="Chunk" minOccurs="1" maxOccurs="1024"/>
+		<Blob name="pngmagic" mutable="false" valueType="hex" value="89 50 4E 47 0D 0A 1A 0A" token="true"/>
+		<Block name="IHDR" ref="Chunk_IHDR"/>
+		<Choice name="DataChunks" minOccurs="2" maxOccurs="30000">
+			<Block name="PLTE" ref="Chunk"/>
+		</Choice>
+		<Block name="IEND" ref="Chunk_IEND"/>
 	</DataModel>
 	
 	<StateModel name="State" initialState="Initial">
@@ -27,9 +52,9 @@
 			<Action type="output" publisher="file">
 				<DataModel ref="PngTemplate" />
 			</Action>
-<!-- 			<Action type="output" publisher="cmd">
+			<Action type="output" publisher="cmd">
 				<DataModel ref="PngTemplate" />
-			</Action> -->
+			</Action>
 			<Action type="close" publisher="file"/>
 			<Action type="call" method="LaunchViwer" publisher="Peach.Agent"/>
 		</State>
@@ -42,6 +67,7 @@
 			<Param name="StartOnCall" value="LaunchViwer" />
 			<Param name="Windbgpath" value="C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\"/>
 			<Param name="Executable" value="test01.exe"/>
+			<Param name="CpuKill" value="true"/>
 		</Monitor>
 		 <Monitor class="PageHeap">
 			<Param name="Executable" value="test01.exe"/>
@@ -54,7 +80,7 @@
 		<Publisher name="file" class="File">
 			<Param name="FileName" value="fuzzed1.png"/>
 		</Publisher>
-		<!-- <Publisher name="cmd" class="Console"/> -->
+		<Publisher name="cmd" class="Console"/>
 		<Strategy class="Random">
 			<Param name="MaxFieldsToMutate" value="15"/>
 			<Param name="SwitchCount" value="100"/>
