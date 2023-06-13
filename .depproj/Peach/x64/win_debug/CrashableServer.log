@@ -1,2 +1,0 @@
-﻿  The project was not configured: run "waf configure" first!
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MakeFile.Targets(46,5): error MSB3073: 命令“cd /d "D:\work\program\protocol-fuzzer-ce-main" & "C:\Python27\python.exe" waf build --execsolution=D:\work\program\protocol-fuzzer-ce-main\Peach.sln --targets=CrashableServer --variant=win_x64_debug”已退出，代码为 1。

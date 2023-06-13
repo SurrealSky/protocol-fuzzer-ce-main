@@ -1,3 +1,0 @@
-2023-06-13 11:29:54.8923 Peach.Pro.Core.Loggers.JobLogger Writing debug.log to: D:\work\program\protocol-fuzzer-ce-main\.depproj\Peach\bin\win_debug_x86\Logs\fuzz_AMS.xml_20230613112952\debug.log 
-2023-06-13 11:29:56.8432 Peach.Core.Engine Stopping engine due to PeachException. 
-2023-06-13 11:29:56.9256 Peach.Core.Engine EndTest: Stopping all agents and monitors 
