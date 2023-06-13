@@ -163,6 +163,13 @@ namespace Peach.Pro.Core.Loggers
 						//   that name.
 
 						var type = ClassLoader.FindPluginByName<MonitorAttribute>(cls);
+						if(type==null)
+                        {
+							throw new PeachException(
+								"The {0} monitor is not supported. ".Fmt(cls) +
+								"Contact Peach Fuzzer sales for more information."
+							);
+						}
 						var monitorName = type.GetAttributes<MonitorAttribute>()
 							.First(x => x.IsDefault)
 							.Name;

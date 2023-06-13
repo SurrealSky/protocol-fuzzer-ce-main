@@ -1,0 +1,12 @@
+Peach Fuzzing Run
+=================
+
+Date of run: 2023/6/13 11:30:12
+Peach Version: 0.0.0.0
+Seed: 44162
+Command line: D:\work\漏洞\TwinCAT\peach\fuzz_AMS.xml
+Pit File: D:\work\漏洞\TwinCAT\peach\fuzz_AMS.xml
+Strategy: Random
+. Test starting: Default
+
+. Record Iteration 1
